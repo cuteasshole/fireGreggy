@@ -26,11 +26,29 @@ html body {
 }
 
 .nav-container {
+    position: relative;
     width: 100%;
     background-color: #F37926;
     height:  40px;
     clear: both;
+    color: white;
+    
     }
+
+nav {
+    width: 1300px;
+    margin: 0 auto;
+    span{
+        margin-left: 60px;
+        vertical-align: middle;
+        display: inline-block;
+        margin-top: 5px;
+    }
+    .greater-than {
+        margin-top: 5px;
+    }
+    
+}
 
 .main-container {
     width: 100%;

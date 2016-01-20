@@ -241,8 +241,7 @@ html body {
   font-family: 'Open Sans', sans-serif; }
 
 .header-full-width-opaque {
-  position: absolute;
-  top: 0;
+  position: relative;
   z-index: 101;
   width: 100%;
   background-color: #434443; }
@@ -260,10 +259,23 @@ html body {
   background-color: #434443; }
 
 .nav-container {
+  position: relative;
   width: 100%;
   background-color: #F37926;
   height: 40px;
-  clear: both; }
+  clear: both;
+  color: white; }
+
+nav {
+  width: 1300px;
+  margin: 0 auto; }
+  nav span {
+    margin-left: 60px;
+    vertical-align: middle;
+    display: inline-block;
+    margin-top: 5px; }
+  nav .greater-than {
+    margin-top: 5px; }
 
 .main-container {
   width: 100%;
