@@ -1,0 +1,228 @@
+.nav-full-width-bg {
+    position: absolute;
+    top: 120px;
+    z-index: 101;
+}
+
+.body-content {
+    .outdoor-content {
+        padding-bottom: 0;
+        background: -moz-linear-gradient(top,  rgba(125,185,232,0) 23%, rgba(164,206,239,0) 46%, rgba(233,233,233,1) 100%);
+        background: -webkit-linear-gradient(top,  rgba(125,185,232,0) 23%,rgba(164,206,239,0) 46%,rgba(233,233,233,1) 100%);
+        background: linear-gradient(to bottom,  rgba(125,185,232,0) 23%,rgba(164,206,239,0) 46%,rgba(233,233,233,1) 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#007db9e8', endColorstr='#ffffff',GradientType=0 );
+        .image-header {
+            img {
+                width: 100%;
+            }
+        }
+        .display-feature {
+            .content-feature-grid {
+                display: block;
+                .content-video {
+                    width: 100%;
+                    img {
+                        width: 100%;
+                    }
+                }
+                .content-title {
+                    text-align: center;
+                    h1 {
+                        font-weight: 100;
+                        font-size: 3.7em;
+                        margin-bottom: 10px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.outdoor-body {
+    background: #E9E9E9;
+    padding-top: 1em;
+    .outdoor-body-content {
+        width: $width;
+        border-top: 1px solid #e4e4e4;
+        border-bottom: 2px solid $how-it-works-color;
+        margin: 0 auto;
+        .outdoor-menu {
+            margin: 0;
+            li {
+                list-style: none;
+                display: inline-block;
+                a {
+                    display: block;
+                    color: #4d4d4d;
+                    padding: 18px 48px;
+                    font-size: 18px;
+                    span {
+                        border: 1px solid #4d4d4d;
+                        border-radius: 20px;
+                        padding: 5px 12px;
+                        margin: 0 17px;
+                    }
+                    &.current {
+            			color: $how-it-works-color;
+                        font-weight: 500;
+                        position: relative;
+                        &:before {
+                            content: '';
+                            position: absolute;
+                            top: 45px;
+                            left: 99px;
+                            border-bottom: 15px solid $how-it-works-color;
+                            border-left: 15px solid transparent;
+                            border-right: 15px solid transparent;
+                            @-moz-document url-prefix() {
+                                top: 65px;
+                            }
+                        }
+                        &:after {
+                            content: '';
+                            position: absolute;
+                            left: 100px;
+                            top: 48px;
+                            border-bottom: 14px solid #E9E9E9;
+                            border-left: 14px solid transparent;
+                            border-right: 14px solid transparent;
+                            @-moz-document url-prefix() {
+                                top: 67px;
+                            }
+                        }
+            		}
+                }
+            }
+        }
+
+        .outdoor-body-detail {
+            width: 100%;
+            float: left;
+            .outdoor-body-description {
+                width: 57.5%;
+                float: left;
+                padding-top: 20px;
+                padding-right: 29px;
+                img {
+                    width: 100%;
+                }
+                p {
+                    font-weight: 100;
+                    line-height: 19px;
+                    padding: 5px 0;
+                    text-align: justify;
+                }
+            }
+            .outdoor-body-sidebar {
+                width: 38%;
+                float: left;
+                padding-left: 30px;
+                .outdoor-statistics {
+                    width: 100%;
+                    background: #fff;
+                    margin: 2px 0;
+                    table {
+                        width: 100%;
+                        tr {
+                            td {
+                                padding: 10px 17px;
+                                &:first-child {
+                                    color: #4d4d4d;
+                                    width: 30%;
+                                    text-align: right;
+                                    font-size: 14px;
+                                    border-right: 1px solid #4d4d4d;
+                                }
+                                &:last-child {
+                                    width: 70%;
+                                    text-align: left;
+                                }
+                            }
+                            &:first-child {
+                                td {
+                                    padding-top: 30px;
+                                }
+                            }
+                            &:nth-child(2) {
+                                td {
+                                    padding-bottom: 50px;
+                                }
+                            }
+                            &:nth-child(4) {
+                                td {
+                                    &:first-child {
+                                        vertical-align: top;
+                                    }
+                                    span {
+                                        &.green {
+                                            color: #097c09;
+                                            display: block;
+                                            font-weight: 700;
+                                        }
+                                        &.orange {
+                                            color: $how-it-works-color;
+                                        }
+                                    }
+                                }
+                            }
+                            &:last-child {
+                                td {
+                                    border-bottom: 1px solid #4d4d4d;
+                                    padding-bottom: 30px;
+                                }
+                            }
+                        }
+                    }
+                }
+                .outdoor-support {
+                    text-align: center;
+                    h3 {
+                        background: url(../../img/firefunder_assets_pledges_firefunder_icon.png) 10px 0 no-repeat;
+                        border-bottom: 2px solid $how-it-works-color;
+                        color: $how-it-works-color;
+                        padding: 8px 0;
+                    }
+                    .outdoor-support-content {
+                        width: 100%;
+                        text-align: left;
+                        float: left;
+                        padding: 15px 0 25px;
+                        border-bottom: 1px dashed $how-it-works-color;
+                        &:last-child {
+                            padding-top: 20px;
+                            border-bottom: 0px;
+                        }
+                        .outdoor-support-detail {
+                            width: 60%;
+                            float: left;
+                            h2 {
+                                background: url(../../img/firefunder_assets_pledges-pledge-icon.png) 0 0 no-repeat;
+                                margin: 0;
+                                font-weight: 100;
+                                padding-left: 40px;
+                                span {
+                                    color: #097c09;
+                                    font-weight: 700;
+                                }
+                            }
+                            p {
+                                font-weight: 100;
+                                font-size: 14px;
+                                padding-left: 40px;
+                            }
+                        }
+                        .outdoor-support-icon {
+                            width: 40%;
+                            height: 82px;
+                            background: url(../../img/firefunder_assets_pledges-pledge-button.png) center 0 no-repeat;
+                            float: left;
+                            color: #F47926;
+                            padding-top: 87px;
+                            text-align: center;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
