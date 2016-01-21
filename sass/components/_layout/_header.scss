@@ -2,6 +2,11 @@ html .container-fluid {
     a {
         color: $colorWhite;
     }
+    .navbar-header {
+        @media screen and (max-width: 767px) {
+            margin: 0;
+        }
+    }
     .main-width {
         width: $width;
         margin: 0 auto;
@@ -61,6 +66,9 @@ html .container-fluid {
                     font-size: 22px;
                     font-weight: 100;
                     padding: 11px 15px;
+                    &.current {
+                        color: $how-it-works-color;
+                    }
                 }
             }
         }
@@ -123,6 +131,9 @@ html .container-fluid {
         background: -webkit-linear-gradient(top,  rgba(0,0,0,0.65) 0%,rgba(0,0,0,0.34) 100%);
         background: linear-gradient(to bottom,  rgba(0,0,0,0.65) 0%,rgba(0,0,0,0.34) 100%);
         filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a6000000', endColorstr='#57000000',GradientType=0 );
+    }
+    .header-main-color {
+        background: #424242;
     }
 }
 

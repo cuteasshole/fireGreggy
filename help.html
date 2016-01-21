@@ -2,7 +2,7 @@
 <html ng-app="app">
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>Help</title>
+  <title>Help | Fire Funder - Ignite Ideas</title>
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="css/normalize.min.css">
@@ -13,9 +13,9 @@
   <script type="text/javascript" src="bower_components/jquery/dist/jquery.min.js"></script>
   <script type="text/javascript" src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
   <body>
-      <div class="container-fluid header-full-width-opaque">
+      <div class="container-fluid no-padding">
           <nav class="navbar navbar-default">
-              <div class="container-fluid">
+              <div class="container-fluid header-main-color">
                 <!-- Brand and toggle get grouped for better mobile display -->
                 <div class="navbar-header">
                   <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
@@ -28,7 +28,7 @@
                 </div>
 
                 <!-- Collect the nav links, forms, and other content for toggling -->
-                <div class="main-width header-container collapse navbar-collapse header-opaque" id="bs-example-navbar-collapse-1">
+                <div class="main-width header-container collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                     <div class="col-md-4 logo logo-desktop"><a class="navbar-brand" href="#"><img src="img/logo.png" title="Fire Funder Logo" alt="Fire Funder Logo" /></a></div>
                     <div class="col-md-6 user-details">
                         <div class="user-welcome">
@@ -38,7 +38,7 @@
                         <ul class="nav navbar-nav navbar-right">
                             <li><a href="#">who we are</a></li>
                             <li><a href="#">what we do</a></li>
-                            <li><a href="#">help</a></li>
+                            <li><a href="#" class="current">help</a></li>
                             <li><a href="#">contact us</a></li>
                         </ul>
                     </div>
@@ -52,51 +52,86 @@
               </div><!-- /.container-fluid -->
             </nav>
       </div>
-      <div class="container-fluid nav-container">
-          <nav> <span><a href="#">Fire Funder Help</a></span> <img class="greater-than"src="img/greater-than.svg"> 
-          </nav>
+
+      <div class="nav-container container-fluid no-padding">
+          <nav><span><a href="#">Fire Funder Help</a></span><img src="img/greater-than.svg"></nav>
       </div>
-          <div class="main-container">
-              <main>
-
-                      <h1>Help</h1>
-                      <span>Click below to view for frequently asked questions and topics</span>
-                  <br>
-                  <br>
-                  <ul class="help-topics">
-                      <li class="active"><a href="#">Introduction</a></li>
-                      <li><a href="#">First Help Issue</a></li>
-                      <li><a href="#">Sed ut perspicialtis unde</a></li>
-                      <li><a href="#">Omnis iste natus erro?</a></li>
-                      <li><a href="#">Upiditate non provident, similique sunt in culpa?</a></li>
-                      <li><a href="#">Omnis dolor repellendus</a></li>
-                  </ul>
-                  
-                  <div class="topic-description">
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dignissim velit at efficitur mattis. Praesent dignissim justo non nisi posuere auctor. Quisque at augue felis. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Curabitur ut enim vel leo posuere accumsan. Mauris sit amet ligula vitae neque interdum 
-                      <img src="http://placehold.it/840x340">
-                  </div>
-
-
-                  <div>
-              </main>
-          </div>
-              
-          <div class="footer-container">
-              <footer>
-                  <div class="footer-logotext">
-                      <div class="footer-logo">
+      <div class="main-container">
+          <div class="content-main page-help">
+              <h1 class="page-help">Help</h1>
+              <span class="page-help">Click below to view for frequently asked questions and topics</span>
+              <div id="container">
+                  <input type="radio" name="check" id="tab1">
+                  <input type="radio" name="check" id="tab2" checked=checked>
+                  <input type="radio" name="check" id="tab3">
+                  <input type="radio" name="check" id="tab4">
+                  <input type="radio" name="check" id="tab5">
+                  <input type="radio" name="check" id="tab6">
+                  <nav class="help-menu col-xs-6 col-lg-4">
+                    <ul>
+                      <li><label for="tab1">Introduction</label></li>
+                      <li><label for="tab2">First Help Issue</label></li>
+                      <li><label for="tab3">Sed ut perspicialtis unde</label></li>
+                      <li><label for="tab4">Omnis iste natus erro?</label></li>
+                      <li><label for="tab5">Upiditate non provident, similique sunt in culpa?</label></li>
+                      <li><label for="tab6">Omnis dolor repellendus</label></li>
+                    </ul>
+                  </nav>
+                  <div id="content" class="col-xs-12 col-sm-6 col-lg-8">
+                      <div class="tab-content">
+                        <h1>TAB 1</h1>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dignissim velit at efficitur mattis. Praesent dignissim justo non nisi posuere auctor. Quisque at augue felis. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Curabitur ut enim vel leo posuere accumsan. Mauris sit amet ligula vitae neque interdum
+                            <img src="http://placehold.it/840x340"></p>
                       </div>
+                      <div class="tab-content">
+                        <h1>TAB 2</h1>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dignissim velit at efficitur mattis. Praesent dignissim justo non nisi posuere auctor. Quisque at augue felis. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Curabitur ut enim vel leo posuere accumsan. Mauris sit amet ligula vitae neque interdum
+                            <img src="http://placehold.it/840x340"></p>
+                      </div>
+                      <div class="tab-content">
+                        <h1>TAB 3</h1>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dignissim velit at efficitur mattis. Praesent dignissim justo non nisi posuere auctor. Quisque at augue felis. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Curabitur ut enim vel leo posuere accumsan. Mauris sit amet ligula vitae neque interdum
+                            <img src="http://placehold.it/840x340"></p>
+                      </div>
+                      <div class="tab-content">
+                        <h1>TAB 4</h1>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dignissim velit at efficitur mattis. Praesent dignissim justo non nisi posuere auctor. Quisque at augue felis. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Curabitur ut enim vel leo posuere accumsan. Mauris sit amet ligula vitae neque interdum
+                            <img src="http://placehold.it/840x340"></p>
+                      </div>
+                      <div class="tab-content">
+                        <h1>TAB 5</h1>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dignissim velit at efficitur mattis. Praesent dignissim justo non nisi posuere auctor. Quisque at augue felis. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Curabitur ut enim vel leo posuere accumsan. Mauris sit amet ligula vitae neque interdum
+                            <img src="http://placehold.it/840x340"></p>
+                      </div>
+                      <div class="tab-content">
+                        <h1>TAB 6</h1>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dignissim velit at efficitur mattis. Praesent dignissim justo non nisi posuere auctor. Quisque at augue felis. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Curabitur ut enim vel leo posuere accumsan. Mauris sit amet ligula vitae neque interdum
+                            <img src="http://placehold.it/840x340"></p>
+                      </div>
+                  </div>
+                </div>
+            </div>
+
+      <div class="footer-container container-fluid">
+          <footer class="row no-margin">
+              <div class="col-xs-10 footer-content no-padding">
+                  <div class="footer-logotext">
+                      <div class="footer-logo"></div>
                       <span class="copyright-text">&copy; Fire Funder 2015. All rights reserved</span>
                   </div>
                   <div class="social-media">
                       Get in touch with us <span class="twitter"></span> <span class="facebook"></span> <span class="google-plus"></span>
                   </div>
-              </footer>
-          </div>
+              </div>
+          </footer>
+      </div>
 
-
-     
   </body>
 
 </html>
