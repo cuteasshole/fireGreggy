@@ -10,87 +10,110 @@
       <link rel="stylesheet" href="css/font-awesome/css/font-awesome.min.css">
   <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,700' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" href="css/components/app.css">
+  <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+  <script type="text/javascript" src="bower_components/jquery/dist/jquery.min.js"></script>
+  <script type="text/javascript" src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
   <body>
-          <div class="header-container">
-              <header>
-                  <div class="logo">
-
-                  </div>
-                  <a href="#"><div class="logout">Logout</div></a>
-                  <a href="#"><div class="search"></div></a>
-                  
-                  <div class="user">
-                      <div class="welcome">
-                          Welcome, John Smith
-                          <span> <a href="#">My Campaigns</a></span>
-                      </div>
-                      <ul>
-                          <li><a href="#">who we are</a></li>
-                          <li><a href="#">what we do</a></li>
-                          <li><a href="#">help</a></li>
-                          <li><a href="#">contact us</a></li>
-                      </ul>
-                  </div>
-              </header>
-          </div>
-          <div class="nav-container">
-              <nav> <span><a href="#">My Campaigns</a></span> <img src="img/greater-than.svg"> <span><a href="#">Basic Information</a></span> </nav>
-          </div>
-          <div class="main-container">
-              <main>
-                  
-                  <ul class="steps">
-                    <li class="active"><a href="#">1</a></li>
-                    <li><a href="#">2</a></li>
-                    <li><a href="#">3</a></li>
-                    <li><a href="#">4</a></li>
-                    <li><a href="#">5</a></li>
-                    <li><a href="#">6</a></li>
-                    <li><a href="#">7</a></li>
-                    <li><a href="#">8</a></li>
-                  </ul>
-                  
-                  <div class="content-left">
-                      <h1>Basic information</h1>
-                      <span>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took </span>
-                  <br>
-                  <br>
-                  <input type="text" placeholder="Campaign Name">
-                  <br>
-                  <div class="tags">
-                    <input type="text" placeholder="Add Tags">
-                      <div class="plus"></div>
-                  </div>
-                
-                  <textarea class="field-margin" placeholder="Input Description" ></textarea>
-                  
-                  <input class="shortfields" type="text" placeholder="Funding Duration"> Days
-                  <br>
-                  <input class="shortfields" type="text" placeholder="Funding Goals"> USD
-                  <br>
-
-                      <label class="select-custom">
-                          <select name='options'>
-                            <option value='option-1'>Funding Type (Please select)</option>
-                            <option value='option-2'>Option 2</option>
-                            <option value='option-3'>Option 3</option>
-                          </select>
-                          <span class="arrow"><i class='fa fa-caret-down'></i></span>
-                      </label>
-                      <br>
-                      <br>
-                  <input class="cancel" type="button" value="CANCEL">
-                  
-                  <input class="next" type="button" value="NEXT">
+      <div class="container-fluid header-full-width-opaque">
+          <nav class="navbar navbar-default">
+              <div class="container-fluid">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                  </button>
+                  <div class="logo logo-mobile"><a class="navbar-brand" href="#"><img src="img/firefunder_assets_firefunder_logo.png" title="Fire Funder Logo" alt="Fire Funder Logo" /></a></div>
                 </div>
-                  <div class="help-right">
-                    <h1>Help:</h1>
-                      <span>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</span>
-                  </div>
+
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="main-width header-container collapse navbar-collapse header-opaque" id="bs-example-navbar-collapse-1">
+                    <div class="col-md-4 logo logo-desktop"><a class="navbar-brand" href="#"><img src="img/logo.png" title="Fire Funder Logo" alt="Fire Funder Logo" /></a></div>
+                    <div class="col-md-6 user-details">
+                        <div class="user-welcome">
+                            <label>Welcome, John Smith</label>
+                            <a href="#"><span>My Campaigns</span></a>
+                        </div>
+                        <ul class="nav navbar-nav navbar-right">
+                            <li><a href="#">who we are</a></li>
+                            <li><a href="#">what we do</a></li>
+                            <li><a href="#">help</a></li>
+                            <li><a href="#">contact us</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-2">
+                        <ul class="nav navbar-nav navbar-right">
+                            <li><a href="#" class="search-icon">Search</a></li>
+                            <li><a href="#" class="logout-icon">Logout</a></li>
+                        </ul>
+                    </div>
+                </div><!-- /.navbar-collapse -->
+              </div><!-- /.container-fluid -->
+            </nav>
+      </div>
+      <div class="container-fluid nav-container">
+          <nav> <span><a href="#">My Campaigns</a></span> <img class="greater-than"src="img/greater-than.svg"> <span><a href="#">Basic Information</a></span> 
+          </nav>
+      </div>
+          <div class="container-fluid main-container">
+              <main>
+                  <div class="row">
+                      <ul class="steps">
+                        <li class="active"><a href="#">1</a></li>
+                        <li><a href="#">2</a></li>
+                        <li><a href="#">3</a></li>
+                        <li><a href="#">4</a></li>
+                        <li><a href="#">5</a></li>
+                        <li><a href="#">6</a></li>
+                        <li><a href="#">7</a></li>
+                        <li><a href="#">8</a></li>
+                      </ul>
+                  
+                      <div class="content-left col-md-6">
+                          <h1>Basic information</h1>
+                          <span>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took </span>
+                          <br>
+                          <br>
+                          <form class="pull-left campaign-form">
+                          <input class="form-control" type="text" placeholder="Campaign Name">
+                          <br>
+                          <div class="tags">
+                            <input class="form-control" type="text" placeholder="Add Tags">
+                              <div class="plus"></div>
+                          </div>
+                          <textarea class="field-margin " placeholder="Input Description" ></textarea>
+
+                          <input class="shortfields form-control" type="text" placeholder="Funding Duration"> Days
+                          <br>
+                          <input class="shortfields form-control" type="text" placeholder="Funding Goals"> USD
+                          <br>
+
+                              <label class="select-custom">
+                                  <select name='options'>
+                                    <option value='option-1'>Funding Type (Please select)</option>
+                                    <option value='option-2'>Option 2</option>
+                                    <option value='option-3'>Option 3</option>
+                                  </select>
+                                  <span class="arrow"><i class='fa fa-caret-down'></i></span>
+                              </label>
+                              <br>
+                              <br>
+                          <input class="cancel" type="button" value="CANCEL">
+
+                          <input class="next" type="button" value="NEXT">
+                      </form>
+                    </div>
+                      <div class="help-right col-md-4">
+                        <h1>Help:</h1>
+                          <span>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</span>
+                      </div>
+                </div>
               </main>
           </div>
               
-          <div class="footer-container">
+          <div class="container-fluid footer-container">
               <footer>
                   <div class="footer-logotext">
                       <div class="footer-logo">
