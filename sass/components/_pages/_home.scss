@@ -41,6 +41,10 @@ html body {
             display: inline-block;
             margin-top: 5px;
         }
+        img {
+            margin-top: 5px;
+            margin-left: 20px;
+        }
         .greater-than {
             margin-top: 5px;
         }
@@ -49,7 +53,7 @@ html body {
 
 .main-container {
     width: 100%;
-    margin-top: 50px;
+    padding-top: 50px;
     background-color: #E9E9E9;
     clear: both;
     position: relative;
@@ -65,7 +69,25 @@ html body {
         background-repeat: no-repeat;
         cursor: pointer;
     }
-
+    .content-main {
+        width: $width;
+        margin: 0 auto;
+        h1 {
+            font-weight: 300;
+            &.page-help {
+                padding: 0 10px;
+            }
+        }
+        span {
+            font-weight: 100;
+            &.page-help {
+                padding: 0 10px;
+            }
+        }
+    }
+    .page-help {
+        padding: 0 5em;
+    }
 }
 a {
     color: #F37926;
@@ -97,13 +119,11 @@ main {
         font-weight: 300;
         color: #F37926;
     }
-
     span {
         display: block;
         .guideline-text {
             width: 860px;
         }
-
     }
 
     select {
@@ -148,20 +168,17 @@ main {
         padding-left: 0px;
         padding-top: 15px;
         text-align: left;
-
         li {
             list-style: none;
             color: #F37926;
             font-weight: bold;
             font-size: 18px;
             padding: 10px;
-            padding-left: 20px;
-            width: 220px;
-            padding-right: 80px;
-
-
+            label {
+                display: block;
+            }
         }
-         .active {
+        .active {
             background: white;
         }
 
