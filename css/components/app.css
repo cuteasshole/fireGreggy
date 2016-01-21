@@ -265,17 +265,21 @@ html body {
   height: 40px;
   clear: both;
   color: white; }
-
-nav {
-  width: 1300px;
-  margin: 0 auto; }
-  nav span {
-    margin-left: 60px;
-    vertical-align: middle;
-    display: inline-block;
-    margin-top: 5px; }
-  nav .greater-than {
-    margin-top: 5px; }
+  .nav-container nav {
+    width: 1300px;
+    margin: 0 auto; }
+    .nav-container nav span {
+      margin-top: 5px;
+      vertical-align: middle;
+      display: inline-block; }
+      .nav-container nav span:first-child {
+        margin-left: 60px;
+        vertical-align: middle;
+        display: inline-block; }
+    .nav-container nav .greater-than {
+      margin-top: 3px;
+      margin-left: 10px;
+      margin-right: 10px; }
 
 .main-container {
   width: 100%;
@@ -332,7 +336,6 @@ main {
   main .content-left {
     float: left;
     margin-bottom: 115px;
-    width: 820px;
     margin-left: 30px; }
   main .campaign-review {
     width: 600px;
@@ -368,50 +371,6 @@ main {
       padding-right: 80px; }
     main .help-topics .active {
       background: white; }
-  main .steps {
-    width: 660px;
-    padding-left: 0px;
-    text-align: center; }
-    main .steps li {
-      display: inline-block;
-      color: white;
-      padding: 0 26px;
-      position: relative;
-      z-index: 2; }
-      main .steps li.active a {
-        background: #F37926;
-        display: none; }
-        main .steps li.active a::after {
-          border-top: 3px solid #F37926; }
-        main .steps li.active a:first-child {
-          display: inline-block; }
-      main .steps li.checked a {
-        background: #F37926;
-        display: inline-block; }
-        main .steps li.checked a::after {
-          border-top: 3px solid #F37926; }
-        main .steps li.checked a:first-child {
-          display: none; }
-      main .steps li a {
-        color: white;
-        padding: 3px;
-        background: #AFAFAF;
-        width: 20px;
-        height: 20px;
-        border-radius: 50%;
-        display: none; }
-        main .steps li a:first-child {
-          display: inline-block; }
-        main .steps li a::after {
-          content: '';
-          border-top: 3px solid #AFAFAF;
-          position: absolute;
-          width: 100%;
-          z-index: -1;
-          top: 12px;
-          right: 31px; }
-      main .steps li:first-child a::after {
-        display: none; }
   main .topic-description {
     background: white;
     display: inline-block;
@@ -451,19 +410,6 @@ main {
     background-color: white; }
   main input[type=text]:disabled {
     background-color: #E0E0E0; }
-  main input[type=text] {
-    width: 590px;
-    padding-left: 10px;
-    height: 50px;
-    border: 0;
-    text-align: left;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    font-size: 22px;
-    color: #AEAEB1; }
-    main input[type=text].shortfields {
-      width: 210px;
-      margin-right: 15px; }
   main .signup-slogan {
     margin-bottom: 30px; }
   main .cancel {
@@ -503,7 +449,7 @@ main {
     color: #AEAEB1;
     height: 180px;
     padding-left: 10px;
-    width: 588px;
+    width: 100%;
     resize: none;
     border: 0;
     font-size: 22px; }
@@ -512,29 +458,6 @@ main {
   main .field-margin {
     margin-top: 10px;
     margin-bottom: 10px; }
-  main .tags {
-    width: 600px;
-    background: white;
-    position: relative;
-    margin-top: 10px;
-    margin-bottom: 10px; }
-    main .tags input[type=text] {
-      margin-top: 0px;
-      margin-bottom: 0px;
-      width: 520px;
-      display: inline-block;
-      font-size: 22px; }
-  main .plus {
-    width: 29px;
-    height: 28px;
-    background: url("../../img/plus.png");
-    display: inline-block;
-    position: absolute;
-    cursor: pointer;
-    margin: 10px;
-    margin-left: 28px;
-    top: 0px;
-    background-repeat: no-repeat; }
   main .video-link {
     width: 29px;
     height: 28px;
@@ -558,7 +481,6 @@ main {
     top: 0px;
     background-repeat: no-repeat; }
   main .help-right {
-    width: 340px;
     height: 480px;
     padding: 20px;
     background: white;
@@ -1976,5 +1898,97 @@ body.modal-open,
               color: #F47926;
               padding-top: 87px;
               text-align: center; }
+
+main {
+  padding-left: 60px; }
+  main .content-left {
+    margin-left: 10px; }
+  main .steps {
+    width: 660px;
+    padding-left: 0px;
+    margin-top: 80px;
+    text-align: center;
+    font-weight: 700; }
+    main .steps li {
+      display: inline-block;
+      color: white;
+      padding: 0 26px;
+      position: relative;
+      z-index: 2; }
+      main .steps li.active a {
+        background: #F37926;
+        display: none; }
+        main .steps li.active a::after {
+          border-top: 3px solid #F37926; }
+        main .steps li.active a:first-child {
+          display: inline-block; }
+      main .steps li.checked a {
+        background: #F37926;
+        display: inline-block; }
+        main .steps li.checked a::after {
+          border-top: 3px solid #F37926; }
+        main .steps li.checked a:first-child {
+          display: none; }
+      main .steps li a {
+        color: white;
+        padding: 3px;
+        background: #AFAFAF;
+        width: 27px;
+        height: 27px;
+        border-radius: 50%;
+        display: none; }
+        main .steps li a:first-child {
+          display: inline-block; }
+        main .steps li a::after {
+          content: '';
+          border-top: 3px solid #AFAFAF;
+          position: absolute;
+          width: 100%;
+          z-index: -1;
+          top: 12px;
+          right: 31px; }
+      main .steps li:first-child a::after {
+        display: none; }
+  main .form-control {
+    display: inline-block; }
+  main input[type=text] {
+    padding-left: 10px;
+    height: 50px;
+    border: 0;
+    text-align: left;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 22px;
+    color: #AEAEB1; }
+    main input[type=text].shortfields {
+      width: 210px;
+      margin-right: 15px; }
+  main select {
+    font-weight: 300; }
+  main .campaign-form {
+    width: 600px; }
+  main .plus {
+    width: 29px;
+    height: 28px;
+    background: url("../../img/plus.png");
+    display: table-cell;
+    position: absolute;
+    cursor: pointer;
+    margin: 10px;
+    top: 0px;
+    right: 0px;
+    background-repeat: no-repeat; }
+  main .tags {
+    width: 600px;
+    background: white;
+    position: relative;
+    margin-top: 10px;
+    margin-bottom: 10px; }
+    main .tags input[type=text] {
+      margin-top: 0px;
+      margin-bottom: 0px;
+      width: 100%;
+      display: inline-block;
+      font-size: 22px; }
 
 /*# sourceMappingURL=app.css.map */
