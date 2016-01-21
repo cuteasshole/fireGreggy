@@ -32,23 +32,31 @@ html body {
     height:  40px;
     clear: both;
     color: white;
-    
+    nav {
+        width: 1300px;
+        margin: 0 auto;
+        span{
+
+            margin-top: 5px;
+            vertical-align: middle;
+            display: inline-block;
+            &:first-child{
+            margin-left: 60px;
+            vertical-align: middle;
+            display: inline-block;
+            }
+
+        }
+        .greater-than {
+            margin-top: 3px;
+            margin-left: 10px;
+            margin-right: 10px;
+        }
+
+    }
     }
 
-nav {
-    width: 1300px;
-    margin: 0 auto;
-    span{
-        margin-left: 60px;
-        vertical-align: middle;
-        display: inline-block;
-        margin-top: 5px;
-    }
-    .greater-than {
-        margin-top: 5px;
-    }
-    
-}
+
 
 .main-container {
     width: 100%;
