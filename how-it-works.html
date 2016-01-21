@@ -2,7 +2,7 @@
 <html ng-app="app">
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>Campaign - Basic Information</title>
+  <title>Campaign - Basic Information | Fire Funder - Ignite Ideas</title>
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="css/normalize.min.css">
@@ -14,7 +14,7 @@
   <script type="text/javascript" src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
   <body>
       <!-- HEADER -->
-      <div class="container-fluid header-full-width-bg">
+      <div class="container-fluid header-full-width-bg no-padding">
           <nav class="navbar navbar-default">
               <div class="container-fluid transparent-header">
                 <!-- Brand and toggle get grouped for better mobile display -->
@@ -56,10 +56,24 @@
       <!-- /.END OF HEADER -->
 
       <!-- BODY CONTENT -->
-      <div class="body-content container-fluid">
+      <div class="body-content container-fluid no-padding">
           <div class="full-width-bg">
               <div id="slides">
                   <ul class="slides-container">
+                      <li>
+                          <img src="img/bg-img.png" />
+                          <div class="slides-content">
+                              <div class="slides-detail">
+                                  <h3>The Modern Camper's Ultimate Pack</h3>
+                                  <div class="slides-info">
+                                      <label><span>58%</span> Funded <span class="box1"></span><span class="box2"></span></label>
+                                      <label><span class="special">$</span><span>16,849.23</span> Raised</label>
+                                      <label><span>two weeks</span> to go</label>
+                                  </div>
+                                  <a href="javascript:void(0)">view campaign</a>
+                              </div>
+                          </div>
+                      </li>
                       <li>
                           <img src="img/bg-img.png" />
                           <div class="slides-content">
@@ -85,58 +99,60 @@
 
               <div class="main-content">
                   <div class="content-feature display-feature">
-                      <div class="content-feature-grid">
-                          <div class="content-feature-detail">
+                      <div class="row content-feature-grid no-margin">
+                          <div class="col-xs-6 col-sm-4 content-feature-detail">
                               <div class="feature-icon"><img src="img/firefunder_assets_category ball sports.png" /></div>
                               <div class="feature-label"><label>Ball Sports</label></div>
                           </div>
-                          <div class="content-feature-detail">
+                          <div class="col-xs-6 col-sm-4 content-feature-detail">
                               <div class="feature-icon"><img src="img/firefunder_assets_category outdoors.png" /></div>
                               <div class="feature-label"><label>Outdoor</label></div>
                           </div>
-                          <div class="content-feature-detail">
+                          <div class="col-xs-6 col-sm-4 content-feature-detail">
                               <div class="feature-icon"><img src="img/firefunder_assets_category motorsports.png" /></div>
                               <div class="feature-label"><label>Motorsports</label></div>
                           </div>
                       </div>
-                      <div class="content-feature-grid">
-                          <div class="content-feature-detail">
+                      <div class="row content-feature-grid no-margin">
+                          <div class="col-xs-6 col-sm-4 content-feature-detail">
                               <div class="feature-icon"><img src="img/firefunder_assets_category running.png" /></div>
                               <div class="feature-label"><label>Endurance</label></div>
                           </div>
-                          <div class="content-feature-detail">
+                          <div class="col-xs-6 col-sm-4 content-feature-detail">
                               <div class="feature-icon"><img src="img/firefunder_assets_category fitness.png" /></div>
                               <div class="feature-label"><label>Fitness<br/> and Training</label></div>
                           </div>
-                          <div class="content-feature-detail">
+                          <div class="col-xs-6 col-sm-4 content-feature-detail">
                               <div class="feature-icon"><img src="img/firefunder_assets_category  extreme sports.png" /></div>
                               <div class="feature-label"><label>Extreme<br/> Sports</label></div>
                           </div>
                       </div>
-                      <div class="content-show-more">
-                          <a href="#" data-toggle="modal" data-target="#myModal">
-                              <div class="content-show-more-btn">
-                                  <label>More</label>
-                                  <span></span><span></span><span></span>
-                              </div>
-                          </a>
+                      <div class="row content-show-more">
+                          <div class="col-md-2 col-md-offset-5 show-more-container">
+                              <a href="#" data-toggle="modal" data-target="#myModal">
+                                  <div class="content-show-more-btn">
+                                      <label>More</label>
+                                      <span></span><span></span><span></span>
+                                  </div>
+                              </a>
+                          </div>
                       </div>
                   </div>
               </div>
           </div>
       </div>
-      <div class="body-content how-it-works">
-          <div class="body-detail-content">
+      <div class="container-fluid body-content how-it-works">
+          <div class="row body-detail-content">
               <h1>How <span>Fire</span> <span>Funder</span> Works</h1>
               <div class="container">
-                  <ul class="tabs">
-                    <li class="tab-link current" data-tab="tab-1">I have a great idea</li>
-                    <li class="tab-link" data-tab="tab-2">I want to support great ideas</li>
-                  </ul>
+                	<ul class="tabs">
+                		<li class="tab-link current" data-tab="tab-1">I have a great idea</li>
+                		<li class="tab-link" data-tab="tab-2">I want to support great ideas</li>
+                	</ul>
 
-                  <div id="tab-1" class="tab-content current">
+                	<div id="tab-1" class="tab-content current">
                         <div class="tab-container">
-                            <div class="tab-detail">
+                            <div class="tab-detail col-xs-6 col-sm-3">
                                 <div class="tab-icon"><img src="img/firefunder_assets_how it works 1.png" /></div>
                                 <div class="tab-title"><h3>Create A Compelling Case</h3></div>
                                 <div class="tab-description">
@@ -146,7 +162,7 @@
                                     Pro ad possit perfecto. Voluptua repudiandae usu te, justo omittam mea ad.</p>
                                 </div>
                             </div>
-                            <div class="tab-detail">
+                            <div class="tab-detail col-xs-6 col-sm-3">
                                 <div class="tab-icon"><img src="img/firefunder_assets_how it works 2.png" /></div>
                                 <div class="tab-title"><h3>Get Enough Supporters</h3></div>
                                 <div class="tab-description">
@@ -156,7 +172,7 @@
                                     Pro ad possit perfecto. Voluptua repudiandae usu te, justo omittam mea ad.</p>
                                 </div>
                             </div>
-                            <div class="tab-detail">
+                            <div class="tab-detail col-xs-6 col-sm-3">
                                 <div class="tab-icon"><img src="img/firefunder_assets_how it works 3.png" /></div>
                                 <div class="tab-title"><h3>Fund Your Project</h3></div>
                                 <div class="tab-description">
@@ -166,7 +182,7 @@
                                     Pro ad possit perfecto. Voluptua repudiandae usu te, justo omittam mea ad.</p>
                                 </div>
                             </div>
-                            <div class="tab-detail">
+                            <div class="tab-detail col-xs-6 col-sm-3">
                                 <div class="tab-icon"><img src="img/firefunder_assets_how it works 4.png" /></div>
                                 <div class="tab-title"><h3>Deliver On Your Promises!</h3></div>
                                 <div class="tab-description">
@@ -177,10 +193,10 @@
                                 </div>
                             </div>
                         </div>
-                  </div>
-                  <div id="tab-2" class="tab-content">
-                     Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                  </div>
+                	</div>
+                	<div id="tab-2" class="tab-content">
+                		 Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                	</div>
                </div>
           </div>
       </div>
@@ -340,15 +356,16 @@
         </div>
 
       <!-- FOOTER -->
-      <div class="footer-container">
-          <footer>
-              <div class="footer-logotext">
-                  <div class="footer-logo">
+      <div class="footer-container container-fluid">
+          <footer class="row no-margin">
+              <div class="col-xs-10 footer-content no-padding">
+                  <div class="footer-logotext">
+                      <div class="footer-logo"></div>
+                      <span class="copyright-text">&copy; Fire Funder 2015. All rights reserved</span>
                   </div>
-                  <span class="copyright-text">&copy; Fire Funder 2015. All rights reserved</span>
-              </div>
-              <div class="social-media">
-                  Get in touch with us <span class="twitter"></span> <span class="facebook"></span> <span class="google-plus"></span>
+                  <div class="social-media">
+                      Get in touch with us <span class="twitter"></span> <span class="facebook"></span> <span class="google-plus"></span>
+                  </div>
               </div>
           </footer>
       </div>
@@ -358,20 +375,20 @@
     <script src="js/jquery.superslides.min.js" type="text/javascript" charset="utf-8"></script>
     <script>
     $(function() {
-        // $('#slides').superslides({
-        //     play: 5000
-        // });
-        $('#slides').superslides();
+        $('#slides').superslides({
+            play: 5000
+        });
+        //$('#slides').superslides();
 
         $('ul.tabs li').on('click', function() {
-        var tab_id = $(this).attr('data-tab');
+    		var tab_id = $(this).attr('data-tab');
 
-        $('ul.tabs li').removeClass('current');
-        $('.tab-content').removeClass('current');
+    		$('ul.tabs li').removeClass('current');
+    		$('.tab-content').removeClass('current');
 
-        $(this).addClass('current');
-        $("#" + tab_id).addClass('current');
-      });
+    		$(this).addClass('current');
+    		$("#" + tab_id).addClass('current');
+    	});
 
         $('.content-show-more').on('click', function() {
             $('.display-feature').css('opacity', 0);

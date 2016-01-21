@@ -1,7 +1,7 @@
 html body {
     font-family: 'Open Sans', sans-serif;
+    overflow-x: hidden;
 }
-
 
 .header-full-width-opaque {
     position: relative;
@@ -35,11 +35,20 @@ html body {
     nav {
         width: 1300px;
         margin: 0 auto;
+        @media screen and (max-width: 767px) {
+            width: 100%;
+        }
         span {
-            margin-left: 60px;
             vertical-align: middle;
             display: inline-block;
             margin-top: 5px;
+            margin-left: 15px;
+            &:first-child {
+                margin-left: 60px;
+            }
+        }
+        a {
+            color: $colorWhite;
         }
         img {
             margin-top: 5px;
@@ -72,6 +81,9 @@ html body {
     .content-main {
         width: $width;
         margin: 0 auto;
+        @media screen and (max-width: 767px) {
+            width: 100%;
+        }
         h1 {
             font-weight: 300;
             &.page-help {
@@ -87,6 +99,9 @@ html body {
     }
     .page-help {
         padding: 0 5em;
+        @media screen and (max-width: 767px) {
+            padding: 0 10px;
+        }
     }
 }
 a {
@@ -716,32 +731,6 @@ main {
         width: 270px;
     }
 
-    .discover-popular {
-        width: 1240px;
-        text-align: center;
-        position: relative;
-        height: 1000px;
-        margin-top: 150px;
-        .big-left {
-            height: 80px;
-            width: 40px;
-            position: absolute;
-            left: -60px;
-            top: 45%;
-            display: block;
-            background: url("../../img/big-left.png");
-        }
-        .big-right {
-            height: 80px;
-            width: 40px;
-            position: absolute;
-            right: -60px;
-            top: 45%;
-            display: block;
-            background: url("../../img/big-right.png");
-        }
-    }
-
     .discover-recent {
         width: 1240px;
         text-align: center;
@@ -1133,87 +1122,6 @@ main {
         }
         &button {
             margin-left: 70px;
-        }
-    }
-
-}
-
-.footer-container {
-    width: 100%;
-    height: 220px;
-    background-color: #434443;
-    clear: both;
-    margin-top: 130px;
-}
-
-footer {
-    margin-top: 55px;
-    width: 600px;
-    margin: 0px auto;
-    height: 220px;
-    background-color: #434443;
-    color: white;
-
-    .footer-logo {
-        height: 120px;
-        width: 280px;
-        background-color: white;
-        float: left;
-        background: url("../../img/footer-logo.png");
-        float: none;
-        display: inline-block;
-        vertical-align: middle;
-        background-position: center right;
-        background-repeat: no-repeat;
-    }
-
-    .footer-logotext {
-        clear: both;
-        width: 100%;
-        margin-top: 55px;
-        display: block;
-        float: left;
-    }
-
-    .copyright-text {
-        float: none;
-        display: inline-block;
-        margin-left: 20px;
-        font-size: 14px;
-        font-weight: 300;
-    }
-
-    .social-media {
-        color: #828282;
-        float: none;
-        display: inline-block;
-        padding-left: 60px;
-        padding-left: 175px;
-        background-repeat: no-repeat;
-        font-size: 17px;
-        .twitter {
-            background: url("../../img/footer-twitter.png");
-            display: inline-block;
-            width: 35px;
-            height: 35px;
-            vertical-align: middle;
-            margin-left: 25px;
-        }
-        .facebook {
-            background: url("../../img/footer-facebook.png");
-            display: inline-block;
-            width: 35px;
-            height: 35px;
-            vertical-align: middle;
-        }
-        .google-plus {
-            background: url("../../img/footer-google-plus.png");
-            display: inline-block;
-            width: 35px;
-            height: 35px;
-            vertical-align: middle;
-            background-repeat: no-repeat;
-
         }
     }
 
