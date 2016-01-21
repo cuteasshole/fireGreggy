@@ -1,0 +1,27 @@
+.popular-main-content {
+    .discover-popular {
+        width: 1240px;
+        text-align: center;
+        position: relative;
+        height: 1000px;
+        margin-top: 150px;
+        .big-left {
+            height: 80px;
+            width: 40px;
+            position: absolute;
+            left: -60px;
+            top: 45%;
+            display: block;
+            background: url("../../img/big-left.png");
+        }
+        .big-right {
+            height: 80px;
+            width: 40px;
+            position: absolute;
+            right: -60px;
+            top: 45%;
+            display: block;
+            background: url("../../img/big-right.png");
+        }
+    }
+}

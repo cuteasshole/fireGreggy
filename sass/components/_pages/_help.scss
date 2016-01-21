@@ -1,0 +1,88 @@
+#container {
+    position: relative;
+    width: 100%;
+    padding: 20px 0;
+    float: left;
+    margin-bottom: 5em;
+    input[type=radio] {
+        display: none;
+    }
+
+    label {
+        cursor: pointer;
+        display: block;
+        padding: 12px 17px;
+        margin: 0;
+    }
+
+    .help-menu {
+        position: relative;
+        display: inline-block;
+        padding: 20px 0 0;
+        @media screen and (max-width: 767px) {
+            width: 100%;
+        }
+        ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            li {
+                position: relative;
+                label {
+                    color: $how-it-works-color;
+                }
+                &:hover {
+                    background: $colorWhite;
+                    z-index: 1;
+                }
+            }
+        }
+    }
+
+    #content {
+        position: relative;
+        display: inline-block;
+        background: $colorWhite;
+        vertical-align: top;
+        p {
+            padding: 5px 10px;
+        }
+        img {
+            width: 100%;
+            margin: 10px 0;
+        }
+        .tab-content {
+            position: relative;
+            display: none;
+            padding: 10px 15px;
+        }
+    }
+
+    #tab1:checked~ #content .tab-content:nth-child(1),
+    #tab2:checked~ #content .tab-content:nth-child(2),
+    #tab3:checked~ #content .tab-content:nth-child(3),
+    #tab4:checked~ #content .tab-content:nth-child(4),
+    #tab5:checked~ #content .tab-content:nth-child(5),
+    #tab6:checked~ #content .tab-content:nth-child(6) {
+        display: inline-block;
+    }
+
+    #tab1:checked~ nav ul li:nth-child(1),
+    #tab2:checked~ nav ul li:nth-child(2),
+    #tab3:checked~ nav ul li:nth-child(3),
+    #tab4:checked~ nav ul li:nth-child(4),
+    #tab5:checked~ nav ul li:nth-child(5),
+    #tab6:checked~ nav ul li:nth-child(6) {
+        background: $colorWhite;
+        z-index: 1;
+    }
+
+    #tab1:checked~ nav ul li:nth-child(1)::before,
+    #tab2:checked~ nav ul li:nth-child(2)::before,
+    #tab3:checked~ nav ul li:nth-child(3)::before,
+    #tab4:checked~ nav ul li:nth-child(4)::before,
+    #tab5:checked~ nav ul li:nth-child(5)::before,
+    #tab6:checked~ nav ul li:nth-child(6)::before {
+        border-color: #efefef;
+    }
+}

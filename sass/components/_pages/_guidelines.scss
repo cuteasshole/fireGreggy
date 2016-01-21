@@ -1,0 +1,61 @@
+.guidelines-main-content {
+    width: $width;
+    margin: 0 auto;
+    padding-top: 45px;
+    @media screen and (max-width: 767px) {
+        width: 100%;
+        padding-top: 0;
+    }
+    .content-left {
+        margin-bottom: 7em;
+        padding-left: 6em;
+        @media screen and (max-width: 767px) {
+            margin-bottom: 1em;
+            padding-left: 10px;
+        }
+        h1 {
+            font-weight: 300;
+            color: $how-it-works-color;
+            margin-top: 0;
+        }
+        p {
+            padding: 7px 0;
+            font-weight: 300;
+        }
+        label {
+            font-weight: 100;
+            padding-top: 10px;
+            .control-indicator {
+                top: 1.25rem;
+                width: 1.25rem;
+                height: 1.25rem;
+            }
+            i {
+                padding-left: 5px;
+            }
+        }
+        a {
+            color: $how-it-works-color;
+        }
+        button {
+            background: $how-it-works-color;
+            padding: 10px 38px;
+            text-transform: uppercase;
+            color: $colorWhite;
+            font-size: 16px;
+            font-weight: 100;
+            border: 0;
+            border-radius: 4px;
+            margin: 15px 0;
+        }
+    }
+    .content-right {
+        @media screen and (max-width: 767px) {
+            width: 100%;
+            margin-bottom: 3em;
+        }
+        img {
+            width: 100%;
+        }
+    }
+}
