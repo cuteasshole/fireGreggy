@@ -215,6 +215,8 @@ html .container-fluid .main-width {
     background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.65) 0%, rgba(0, 0, 0, 0.34) 100%);
     background: linear-gradient(to bottom, rgba(0, 0, 0, 0.65) 0%, rgba(0, 0, 0, 0.34) 100%);
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a6000000', endColorstr='#57000000',GradientType=0 ); }
+  .navbar.navbar-default .header-main-color {
+    background: #424242; }
 
 .logo-mobile {
   display: none; }
@@ -265,17 +267,16 @@ html body {
   height: 40px;
   clear: both;
   color: white; }
-
-nav {
-  width: 1300px;
-  margin: 0 auto; }
-  nav span {
-    margin-left: 60px;
-    vertical-align: middle;
-    display: inline-block;
-    margin-top: 5px; }
-  nav .greater-than {
-    margin-top: 5px; }
+  .nav-container nav {
+    width: 1300px;
+    margin: 0 auto; }
+    .nav-container nav span {
+      margin-left: 60px;
+      vertical-align: middle;
+      display: inline-block;
+      margin-top: 5px; }
+    .nav-container nav .greater-than {
+      margin-top: 5px; }
 
 .main-container {
   width: 100%;
