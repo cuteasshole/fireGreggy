@@ -35,7 +35,7 @@ html body {
     nav {
         width: 1300px;
         margin: 0 auto;
-        @media screen and (max-width: 767px) {
+        @media screen and (max-width: 992px) {
             width: 100%;
         }
         span {
@@ -69,7 +69,7 @@ html body {
     .content-main {
         width: $width;
         margin: 0 auto;
-        @media screen and (max-width: 767px) {
+        @media screen and (max-width: 992px) {
             width: 100%;
         }
         h1 {
@@ -87,7 +87,7 @@ html body {
     }
     .page-help {
         padding: 0 5em;
-        @media screen and (max-width: 767px) {
+        @media screen and (max-width: 992px) {
             padding: 0 10px;
         }
     }
@@ -106,7 +106,6 @@ main {
     color: black;
     margin: 0px auto;
     text-align: justify;
-
     button {
         background: #F37926;
         padding: 5px 8px;
@@ -314,11 +313,6 @@ main {
         font-size: 22px;
 
     }
-
-
-
-
-
 
     textarea:disabled{
         background-color: #E0E0E0;
@@ -561,8 +555,6 @@ main {
         }
     }
 
-
-
     hr {
         width: 630px;
         display: inline-block;
@@ -650,207 +642,4 @@ main {
     .short-select {
         width: 270px;
     }
-
-    .campaign-list{
-        width: 1100px;
-        .item{
-            width: 295px;
-            height: 410px;
-            background-color: white;
-            position: relative;
-            display: block;
-            float: left;
-            margin-right: 60px;
-            margin-bottom: 40px;
-            img{
-                width: 295px;
-                height: 160px;
-            }
-            h2 {
-                color: #F37926;
-                font-weight: 500;
-                font-size: 19px;
-                text-align: left;
-                padding-left: 20px;
-                margin-bottom: 0px;
-            }
-            h3 {
-                font-weight: 500;
-                font-size: 15px;
-                text-align: left;
-                padding-left: 20px;
-                margin-top: 0px;
-                margin-bottom: 20px;
-            }
-            .gray-flame {
-                width: 20px;
-                height: 30px;
-                background: url("../../img/flame.png");
-                background-repeat: no-repeat;
-                display: inline-block;
-                float: left;
-                margin-right: 10px;
-                background-size: 20px 30px;
-            }
-            span {
-                float: left;
-                margin-left: 10px;
-                display: inline-block;
-                .percentage {
-                    padding-top: 10px;
-                }
-                b{
-                    font-weight: 500;
-                }
-            }
-            progress{
-                width: 100px;
-                margin-top: 12px;
-                margin-left: 10px;
-                float: left;
-                display: inline-block;;
-                -webkit-appearance: none;
-                border: 1px #9C9C9C solid;
-                background: white;
-                &::-webkit-progress-bar {
-                    background-color: white;
-                }
-                &::-webkit-progress-value {
-                    background: #F37926;
-                }
-                &::-moz-progress-bar {
-                    background-color: #F37926;
-                }
-            }
-            .percentage {
-                margin-left: 0px;
-                sub {
-                    float: left;
-                    margin-top: 8px;
-                    margin-left: 5px;
-                    font-weight: 500;
-                }
-
-            }
-            .progress {
-                height: 40px;
-                width: 100%;
-                float: left;
-                b{
-                    float: left;
-                    font-size: 16px;
-
-                }
-                span {
-                    font-size: 17px;
-                }
-            }
-            .raised {
-                height: 40px;
-                width: 100%;
-                margin-top: 7px;
-                font-size: 17px;
-                .fa {
-                    font-size: 24px;
-                    float: left;
-                    margin-left: 10px;
-                    color: #989898;
-                }
-                span {
-                    margin-left: 20px;
-                }
-                b {
-                    float: left;
-                    display: inline-block;
-                    margin-left: 12px;
-                }
-                sub {
-                        float: left;
-                        margin-top: 9px;
-                        margin-left: 10px;
-                        font-weight: 500;
-                }
-            }
-            .duration {
-                height: 40px;
-                width: 100%;
-                .fa {
-                    font-size: 24px;
-                    float: left;
-                    margin-left: 10px;
-                    color: #989898;
-                }
-                b {
-                    float: left;
-                }
-                sub {
-                    float: left;
-                    margin-top: 10px;
-                    margin-left: 10px;
-                    font-weight: 500;
-                }
-
-                span {
-                    margin-left: 9px;
-                }
-            }
-
-            .item-link {
-                width: 33px;
-                height: 33px;
-                border-radius: 50%;
-                background-color: #F37926;
-                bottom: 0;
-                right: 0;
-                display: block;
-                position: absolute;
-                margin: 20px;
-                .fa{
-                    color: white;
-                    padding: 10px;
-                }
-            }
-            .delete-link {
-                width: 33px;
-                height: 33px;
-                border-radius: 50%;
-                background-color: white;
-                bottom: 0;
-                right: 40px;
-                display: block;
-                position: absolute;
-                margin: 20px;
-                border: 1px solid #F37926;
-                .fa {
-                    padding: 10px;
-                }
-            }
-        }
-    }
-
-
-    .campaign-span{
-        width: 640px;
-        float: left;
-        margin-right: 80px;
-    }
-    .start-campaign {
-        margin-left: 10px;
-        h1 {
-            font-size: 39px;
-        }
-        &span{
-            width: 640px;
-            display: inline-block;
-            float: left;
-        }
-        &button {
-            margin-left: 70px;
-        }
-    }
-
-}
-
-.fire-container {
-
 }

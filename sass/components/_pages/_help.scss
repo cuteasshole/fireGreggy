@@ -19,8 +19,9 @@
         position: relative;
         display: inline-block;
         padding: 20px 0 0;
-        @media screen and (max-width: 767px) {
+        @media screen and (max-width: 992px) {
             width: 100%;
+            padding: 0;
         }
         ul {
             list-style: none;
@@ -44,6 +45,9 @@
         display: inline-block;
         background: $colorWhite;
         vertical-align: top;
+        @media screen and (max-width: 992px) {
+            width: 100%;
+        }
         p {
             padding: 5px 10px;
         }

@@ -50,7 +50,7 @@
             top: -1px;
             width: 2rem;
             height: 2rem;
-            @media screen and (max-width: 767px) {
+            @media screen and (max-width: 992px) {
                 left: 0;
             }
         }
@@ -69,6 +69,7 @@
 
         .signup-slogan {
             margin-bottom: 30px;
+            color: #4d4d4d;
         }
 
         .terms-of-use {
