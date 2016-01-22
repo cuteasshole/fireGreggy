@@ -1,3 +1,56 @@
+@media (max-width: 992px) {
+    html {
+        .navbar-header {
+            float: none;
+        }
+        .navbar-left,.navbar-right {
+            float: none !important;
+        }
+        .navbar-toggle {
+            display: block;
+        }
+        .navbar-collapse {
+            border-top: 1px solid transparent;
+            box-shadow: inset 0 1px 0 rgba(255,255,255,0.1);
+        }
+        .navbar-fixed-top {
+    		top: 0;
+    		border-width: 0 0 1px;
+    	}
+        .navbar-collapse.collapse {
+            display: none!important;
+        }
+        .navbar-nav {
+            float: none!important;
+    		margin-top: 7.5px;
+    	}
+    	.navbar-nav>li {
+            float: none;
+        }
+        .navbar-nav>li>a {
+            padding-top: 10px;
+            padding-bottom: 10px;
+        }
+        .collapse.in{
+      		display:block !important;
+    	}
+        .logo-mobile {
+            display: block;
+            width: 50%;
+            float: left;
+            a {
+                padding: 2px 0px 2px 30px;
+                img {
+                    width: 50%;
+                }
+            }
+        }
+        .logo-desktop {
+            display: none;
+        }
+    }
+}
+
 html .container-fluid {
     a {
         color: $colorWhite;
@@ -36,6 +89,9 @@ html .container-fluid {
                 display: block;
                 @media screen and (max-width: 767px) {
                     display: none;
+                }
+                @media screen and (max-width: 992px) {
+                    text-align: left;
                 }
                 label {
                     font-weight: 100;
@@ -77,6 +133,9 @@ html .container-fluid {
                 margin: 0;
                 padding: 0;
             }
+            @media screen and (max-width: 992px) {
+                margin: 0;
+            }
             li > a {
                 &.search-icon {
                     width: 42px;
@@ -88,6 +147,17 @@ html .container-fluid {
                     text-indent: -9999px;
                     @media screen and (max-width: 767px) {
                         display: none;
+                    }
+                    @media screen and (max-width: 992px) {
+                        background: transparent;
+                        text-indent: 0;
+                        display: block;
+                        text-transform: lowercase;
+                        color: $colorWhite;
+                        font-size: 22px;
+                        font-weight: 100;
+                        padding: 11px 15px;
+                        margin: 0 4px;
                     }
                 }
                 &.logout-icon {
@@ -114,6 +184,17 @@ html .container-fluid {
                         background: transparent;
                         margin: 0;
                     }
+                    @media screen and (max-width: 992px) {
+                        background: transparent;
+                        text-indent: 0;
+                        display: block;
+                        text-transform: lowercase;
+                        color: $colorWhite;
+                        font-size: 22px;
+                        font-weight: 100;
+                        padding: 11px 15px;
+                        margin: 0 4px;
+                    }
                 }
             }
         }
@@ -139,7 +220,7 @@ html .container-fluid {
 
 .logo-mobile {
     display: none;
-    @media screen and (max-width: 767px) {
+    @media screen and (max-width: 767px) and (max-width: 992px) {
         display: block;
         width: 50%;
         float: left;
@@ -158,7 +239,7 @@ html .navbar-toggle {
 
 .logo-desktop {
     display: block;
-    @media screen and (max-width: 767px) {
+    @media screen and (max-width: 767px) and (max-width: 992px) {
         display: none;
     }
 }

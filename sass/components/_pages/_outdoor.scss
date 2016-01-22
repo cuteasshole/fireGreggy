@@ -2,7 +2,7 @@
     position: absolute;
     top: 120px;
     z-index: 101;
-    @media screen and (max-width: 767px) {
+    @media screen and (max-width: 992px) {
         position: static;
     }
 }
@@ -13,12 +13,12 @@
 
 .body-content {
     &.outdoor-header-content {
-        @media screen and (max-width: 767px) {
+        @media screen and (max-width: 992px) {
             z-index: 9999;
         }
     }
     &.outdoor-main-content {
-        @media screen and (max-width: 767px) {
+        @media screen and (max-width: 992px) {
             padding-top: 8em;
         }
     }
@@ -28,7 +28,7 @@
         background: -webkit-linear-gradient(top,  rgba(125,185,232,0) 23%,rgba(164,206,239,0) 46%,rgba(233,233,233,1) 100%);
         background: linear-gradient(to bottom,  rgba(125,185,232,0) 23%,rgba(164,206,239,0) 46%,rgba(233,233,233,1) 100%);
         filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#007db9e8', endColorstr='#ffffff',GradientType=0 );
-        @media screen and (max-width: 767px) {
+        @media screen and (max-width: 992px) {
             top: 0px;
         }
         .image-header {
@@ -41,7 +41,7 @@
                 display: block;
                 .content-video {
                     width: 100%;
-                    @media screen and (max-width: 767px) {
+                    @media screen and (max-width: 992px) {
                         width: 80%;
                         margin: 0 auto;
                         padding-top: 35px;
@@ -57,7 +57,7 @@
                         font-weight: 100;
                         font-size: 3.7em;
                         margin-bottom: 10px;
-                        @media screen and (max-width: 767px) {
+                        @media screen and (max-width: 992px) {
                             font-size: 6.5vw;
                             padding: 0 30px;
                         }
@@ -78,7 +78,7 @@
         width: $width;
         border-top: 1px solid #e4e4e4;
         margin: 0 auto;
-        @media screen and (max-width: 767px) {
+        @media screen and (max-width: 992px) {
             width: 100%;
         }
         .outdoor-menu {
@@ -88,7 +88,7 @@
             li {
                 list-style: none;
                 display: inline-block;
-                @media screen and (max-width: 767px) {
+                @media screen and (max-width: 992px) {
                     display: block;
                     border-bottom: 1px solid #DCDCDC;
                     &:last-child {
@@ -97,7 +97,7 @@
                 }
                 a {
                     display: block;
-                    color: #4d4d4d;
+                    color: #888585;
                     padding: 18px 48px;
                     font-size: 18px;
                     span {
@@ -121,7 +121,7 @@
                             @-moz-document url-prefix() {
                                 top: 65px;
                             }
-                            @media screen and (max-width: 767px) {
+                            @media screen and (max-width: 992px) {
                                 display: none;
                             }
                         }
@@ -136,7 +136,7 @@
                             @-moz-document url-prefix() {
                                 top: 67px;
                             }
-                            @media screen and (max-width: 767px) {
+                            @media screen and (max-width: 992px) {
                                 display: none;
                             }
                         }
@@ -150,7 +150,7 @@
             float: left;
             .outdoor-body-description {
                 padding: 30px 28px 30px 40px;
-                @media screen and (max-width: 767px) {
+                @media screen and (max-width: 992px) {
                     padding: 0 20px;
                 }
                 img {
@@ -165,8 +165,8 @@
             }
             .outdoor-body-sidebar {
                 padding-left: 30px;
-                padding-right: 0;
-                @media screen and (max-width: 767px) {
+                padding-right: 15px;
+                @media screen and (max-width: 992px) {
                     width: 100%;
                     padding: 0 20px;
                 }
@@ -180,15 +180,17 @@
                             td {
                                 padding: 10px 17px;
                                 &:first-child {
-                                    color: #4d4d4d;
+                                    color: #777777;
                                     width: 30%;
                                     text-align: right;
                                     font-size: 14px;
-                                    border-right: 1px solid #4d4d4d;
+                                    border-right: 1px solid #777777;
                                 }
                                 &:last-child {
                                     width: 70%;
                                     text-align: left;
+                                    font-weight: 500;
+                                    font-size: 16px;
                                 }
                             }
                             &:first-child {
@@ -246,8 +248,9 @@
                             border-bottom: 0px;
                         }
                         .outdoor-support-detail {
-                            @media screen and (max-width: 767px) {
+                            @media screen and (max-width: 992px) {
                                 padding-right: 0;
+                                width: 74%;
                             }
                             h2 {
                                 background: url(../../img/firefunder_assets_pledges-pledge-icon.png) 0 0 no-repeat;
@@ -264,7 +267,7 @@
                                 font-size: 14px;
                                 padding-left: 45px;
                                 padding-top: 15px;
-                                @media screen and (max-width: 767px) {
+                                @media screen and (max-width: 992px) {
                                     text-align: justify;
                                 }
                             }
@@ -275,6 +278,9 @@
                             color: #F47926;
                             padding-top: 87px;
                             text-align: center;
+                            @media screen and (max-width: 992px) {
+                                width: 24%;
+                            }
                             @media screen and (max-width: 767px) {
                                 display: none;
                             }
