@@ -35,7 +35,6 @@ html body {
     nav {
         width: 1300px;
         margin: 0 auto;
-
         @media screen and (max-width: 767px) {
             width: 100%;
         }
@@ -61,26 +60,12 @@ html body {
     }
 }
 
-
-
 .main-container {
     width: 100%;
     padding-top: 50px;
     background-color: #E9E9E9;
     clear: both;
     position: relative;
-    .top-more{
-        position: absolute;
-        height: 70px;
-        width: 135px;
-        background: url("../../img/upside-down-more.png");
-        top: -150px;
-        left: 0;
-        right: 0;
-        margin: 0px auto;
-        background-repeat: no-repeat;
-        cursor: pointer;
-    }
     .content-main {
         width: $width;
         margin: 0 auto;
@@ -153,7 +138,7 @@ main {
     .content-left {
         float: left;
         margin-bottom: 115px;
-//        width: 820px;
+        width: 820px;
         margin-left: 30px;
     }
 
@@ -201,7 +186,74 @@ main {
         }
 
     }
-    
+
+    .steps{
+        width: 660px;
+        padding-left: 0px;
+      text-align: center;
+      li{
+        display: inline-block;
+        color: white;
+        padding: 0 26px;
+        position: relative;
+        z-index: 2;
+        &.active{
+          a{
+              background: #F37926;
+              display: none;
+            &::after{
+              border-top: 3px solid #F37926;
+            }
+              &:first-child {
+                  display: inline-block;
+              }
+          }
+        }
+
+          &.checked{
+            a{
+              background: #F37926;
+              display: inline-block;
+            &::after{
+              border-top: 3px solid #F37926;
+            }
+              &:first-child {
+                  display: none;
+              }
+            }
+          }
+        a{
+          color: white;
+          padding: 3px;
+          background: #AFAFAF;
+          width: 20px;
+          height: 20px;
+          border-radius: 50%;
+          display: none;
+              &:first-child {
+                  display: inline-block;
+              }
+          &::after {
+                content: '';
+                border-top: 3px solid #AFAFAF;
+                position: absolute;
+                width: 100%;
+                z-index: -1;
+                top: 12px;
+                right: 31px;
+          }
+        }
+        &:first-child{
+          a{
+            &::after{
+              display:none;
+            }
+          }
+        }
+
+      }
+    }
+
     .topic-description {
         background: white;
         display: inline-block;
@@ -213,71 +265,6 @@ main {
             width: 840px;
             height: 340px;
         }
-    }
-
-    .registration-form {
-        width: 610px;
-        height: 580px;
-        margin: 0px auto;
-        text-align: center;
-
-        input[type=text],
-        input[type=password] {
-            width: 600px;
-            height: 50px;
-            text-align: center;
-            margin-top: 10px;
-            margin-bottom: 10px;
-            border: 0;
-            font-size: 22px;
-            color: #AEAEB1;
-
-        }
-
-    }
-
-    input[type=checkbox] {
-        background-color: #F37926;
-
-    }
-    input[type=submit] {
-        width: 600px;
-        background-color: #F37926;
-        border: 0;
-        border-radius: 5px;
-        height: 50px;
-        color: white;
-        font-size: 23px;
-
-    }
-
-    .checkbox .control-indicator {
-        background-color: white;
-
-    }
-    input[type=text]:disabled{
-            background-color: #E0E0E0;
-        }
-
-//    input[type=text]{  
-//        width: 590px;
-//        padding-left: 10px;
-//        height: 50px;
-//        border: 0;
-//        text-align: left;
-//        margin-top: 10px;
-//        margin-bottom: 10px;
-//            font-size: 22px;
-//        color: #AEAEB1;
-//        &.shortfields {
-//            width: 210px;
-//            margin-right: 15px;
-//        }
-//     
-//    }
-
-    .signup-slogan {
-        margin-bottom: 30px;
     }
 
     .cancel{
@@ -303,12 +290,6 @@ main {
         font-size: 22px;
     }
 
-    .terms-of-use {
-        margin-top: 20px;
-        font-weight: 500;
-        font-size: 15px;
-    }
-
     .area-custom {
         position: relative;
         .small-plus {
@@ -327,7 +308,7 @@ main {
         color: #AEAEB1;
         height: 180px;
         padding-left: 10px;
-        width: 100%;
+        width: 588px;
         resize: none;
         border: 0;
         font-size: 22px;
@@ -348,6 +329,34 @@ main {
         margin-bottom: 10px;
     }
 
+    .tags {
+        width: 600px;
+        background: white;
+        position: relative;
+        input[type=text]{
+            margin-top: 0px;
+            margin-bottom: 0px;
+            width: 520px;
+            display: inline-block;
+            font-size: 22px;
+
+    }
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+    }
+    .plus {
+        width: 29px;
+        height: 28px;
+        background: url("../../img/plus.png");
+        display: inline-block;
+        position: absolute;
+        cursor: pointer;
+        margin: 10px;
+        margin-left: 28px;
+        top: 0px;
+        background-repeat: no-repeat;
+    }
     .video-link {
         width: 29px;
         height: 28px;
@@ -376,7 +385,7 @@ main {
 
 
     .help-right {
-//        width: 340px;
+        width: 340px;
         height: 480px;
         padding: 20px;
         background: white;
@@ -640,13 +649,6 @@ main {
         width: 270px;
     }
 
-    .discover-recent {
-        width: 1240px;
-        text-align: center;
-        position: relative;
-        height: 560px;
-    }
-
     .campaign-list{
         width: 1100px;
         .item{
@@ -824,196 +826,7 @@ main {
         }
     }
 
-    .project-list {
-        .item{
-            width: 290px;
-            height: 410px;
-            background-color: white;
-            position: relative;
-            display: block;
-            float: left;
-//            margin-right: 20px;
-//            margin-bottom: 20px;
-            margin: 10px;
 
-            img {
-                width: 290px;
-                height: 155px;
-            }
-            h2 {
-                color: #F37926;
-                font-weight: 500;
-                font-size: 19px;
-                text-align: left;
-                padding-left: 20px;
-                margin-bottom: 0px;
-            }
-            h3 {
-                font-weight: 500;
-                font-size: 15px;
-                text-align: left;
-                padding-left: 20px;
-                margin-top: 0px;
-                margin-bottom: 20px;
-            }
-            .gray-flame {
-                width: 20px;
-                height: 30px;
-                background: url("../../img/flame.png");
-                background-repeat: no-repeat;
-                display: inline-block;
-                float: left;
-                margin-right: 10px;
-                background-size: 20px 30px;
-            }
-            span {
-                float: left;
-                margin-left: 10px;
-                display: inline-block;
-                .percentage {
-                    padding-top: 10px;
-                }
-                b{
-                    font-weight: 500;
-                }
-            }
-            progress{
-                width: 100px;
-                margin-top: 12px;
-                margin-left: 10px;
-                float: left;
-                display: inline-block;;
-                -webkit-appearance: none;
-                border: 1px #9C9C9C solid;
-                background: white;
-                &::-webkit-progress-bar {
-                    background-color: white;
-                }
-                &::-webkit-progress-value {
-                    background: #F37926;
-                }
-                &::-moz-progress-bar {
-                    background-color: #F37926;
-                }
-            }
-            .percentage {
-                margin-left: 0px;
-                sub {
-                    float: left;
-                    margin-top: 8px;
-                    margin-left: 5px;
-                    font-weight: 500;
-                }
-
-            }
-            .progress {
-                height: 40px;
-                width: 100%;
-                float: left;
-                b{
-                    float: left;
-                    font-size: 16px;
-
-                }
-                span {
-                    font-size: 17px;
-                }
-            }
-            .raised {
-                height: 40px;
-                width: 100%;
-                margin-top: 15px;
-                font-size: 17px;
-                .fa {
-                    font-size: 24px;
-                    float: left;
-                    margin-left: 10px;
-                    color: #989898;
-                }
-                span {
-                    margin-left: 20px;
-                }
-                b {
-                    float: left;
-                    display: inline-block;
-                    margin-left: 12px;
-                }
-                sub {
-                        float: left;
-                        margin-top: 9px;
-                        margin-left: 10px;
-                        font-weight: 500;
-                }
-            }
-            .duration {
-                height: 40px;
-                width: 100%;
-                margin-top: 15px;
-                .fa {
-                    font-size: 24px;
-                    float: left;
-                    margin-left: 10px;
-                    color: #989898;
-                }
-                b {
-                    float: left;
-                }
-                sub {
-                    float: left;
-                    margin-top: 10px;
-                    margin-left: 10px;
-                    font-weight: 500;
-                }
-
-                span {
-                    margin-left: 9px;
-                }
-            }
-
-            .item-link {
-                width: 33px;
-                height: 33px;
-                border-radius: 50%;
-                background-color: #F37926;
-                bottom: 0;
-                right: 0;
-                display: block;
-                position: absolute;
-                margin: 20px;
-
-                div {
-                    background: url("../../img/long-arrow.png");
-                    height: 18px;
-                    width: 18px;
-                    background-size: 18px 18px;
-                    margin: 7px;
-
-                }
-            }
-        }
-    }
-    .more-popular {
-    clear: both;
-    display: inline-block;
-    float: right;
-    margin-right: 10px;
-    background: #F37926;
-    color: white;
-    font-size: 12px;
-    width: 150px;
-    padding-top: 6px;
-    padding-bottom: 6px;
-    padding-left: 20px;
-    margin-top: 30px;
-        .long-arrow{
-            background: url("../../img/long-arrow.png");
-            width: 30px;
-            height: 20px;
-            float: right;
-            margin-right: 20px;
-            margin-right: 80px;
-        }
-    }
     .campaign-span{
         width: 640px;
         float: left;

@@ -7,76 +7,100 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="css/wtf-forms.css">
   <link rel="stylesheet" href="css/normalize.min.css">
-
   <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,700' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" href="css/components/app.css">
-
-    
+  <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+  <script type="text/javascript" src="bower_components/jquery/dist/jquery.min.js"></script>
+  <script type="text/javascript" src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
   <body>
-          <div class="header-container">
-              <header>
-                  <div class="logo">
+      <!-- HEADER -->
+      <div class="container-fluid no-padding">
+          <nav class="navbar navbar-default">
+              <div class="container-fluid header-main-color">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                  </button>
+                  <div class="logo logo-mobile"><a class="navbar-brand" href="#"><img src="img/firefunder_assets_firefunder_logo.png" title="Fire Funder Logo" alt="Fire Funder Logo" /></a></div>
+                </div>
 
-                  </div>
-                  <a href="#"><div class="logout">Logout</div></a>
-                  <a href="#"><div class="search"></div></a>
-                  
-                  <div class="user">
-                      <div class="welcome">
-                          Welcome, John Smith
-                          <span> <a href="#">My Campaigns</a></span>
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="main-width header-container collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <div class="col-md-4 logo logo-desktop"><a class="navbar-brand" href="#"><img src="img/logo.png" title="Fire Funder Logo" alt="Fire Funder Logo" /></a></div>
+                    <div class="col-md-6 user-details">
+                        <div class="user-welcome">
+                            <label>Welcome, John Smith</label>
+                            <a href="#"><span>My Campaigns</span></a>
+                        </div>
+                        <ul class="nav navbar-nav navbar-right">
+                            <li><a href="#">who we are</a></li>
+                            <li><a href="#">what we do</a></li>
+                            <li><a href="#">help</a></li>
+                            <li><a href="#">contact us</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-2">
+                        <ul class="nav navbar-nav navbar-right">
+                            <li><a href="#" class="search-icon">Search</a></li>
+                            <li><a href="#" class="logout-icon">Logout</a></li>
+                        </ul>
+                    </div>
+                </div><!-- /.navbar-collapse -->
+              </div><!-- /.container-fluid -->
+            </nav>
+        </div>
+      <div class="nav-container">
+          <nav> <span><a href="#">Signup</a></span><img src="img/greater-than.svg"> <span><a href="#">Registration</a></span> </nav>
+      </div>
+      <div class="main-container container-fluid">
+          <div class="signup-container row">
+              <div class="registration-form col-sm-6 col-md-6 col-sm-offset-3">
+                  <h1>Signup Now!</h1>
+                  <span class="signup-slogan">Join Firefunder now and start funding. It only takes seconds!</span>
+                  <form>
+                      <div class="form-group">
+                          <input type="text" value="" class="form-control" placeholder="First Name" />
                       </div>
-                      <ul>
-                          <li><a href="#">who we are</a></li>
-                          <li><a href="#">what we do</a></li>
-                          <li><a href="#">help</a></li>
-                          <li><a href="#">contact us</a></li>
-                      </ul>
-                  </div>
-              </header>
-          </div>
-          <div class="nav-container">
-              <nav> <span><a href="#">Signup</a></span><img src="img/greater-than.svg"> <span><a href="#">Registration</a></span> </nav>
-          </div>
-          <div class="main-container">
-              <main>
-                  <div class="registration-form">
-                      <h1>Signup Now!</h1>
-                      <span class="signup-slogan">Join Firefunder now and start funding. It only takes seconds!</span>
-                      <input type="text" value="" placeholder="First Name">
-                      <input type="text" value="" placeholder="Last Name">
-                      <input type="text" value="" placeholder="Username">
-                      <input type="password" value="" placeholder="Password">
-                      <input type="password" value="" placeholder="Repeat Password">
+                      <div class="form-group">
+                          <input type="text" value="" class="form-control" placeholder="Last Name" />
+                      </div>
+                      <div class="form-group">
+                          <input type="text" value="" class="form-control" placeholder="Username" />
+                      </div>
+                      <div class="form-group">
+                          <input type="password" value="" class="form-control" placeholder="Password" />
+                      </div>
+                      <div class="form-group">
+                          <input type="password" value="" class="form-control" placeholder="Repeat Password" />
+                      </div>
                       <label class="control checkbox terms-of-use">
-                          <input type="checkbox"> 
+                          <input type="checkbox">
                           <span class="control-indicator"></span>
                           <i>I have read and agree to the <a href="#">Firefunder Terms of Use</a></i>
                       </label>
-                      <br>
-                      <br>
-                      <br>
-                      <input type="submit" value="REGISTER">
-
-                 </div>
-              </main>
+                      <input type="submit" value="REGISTER" class="btn btn-default" />
+                  </form>
+             </div>
           </div>
-              
-          <div class="footer-container">
-              <footer>
+      </div>
+
+      <div class="footer-container container-fluid">
+          <footer class="row no-margin">
+              <div class="col-xs-10 footer-content no-padding">
                   <div class="footer-logotext">
-                      <div class="footer-logo">
-                      </div>
+                      <div class="footer-logo"></div>
                       <span class="copyright-text">&copy; Fire Funder 2015. All rights reserved</span>
                   </div>
                   <div class="social-media">
                       Get in touch with us <span class="twitter"></span> <span class="facebook"></span> <span class="google-plus"></span>
                   </div>
-              </footer>
-          </div>
+              </div>
+          </footer>
+      </div>
 
-
-     
   </body>
-
 </html>
