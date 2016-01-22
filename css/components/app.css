@@ -2027,12 +2027,12 @@ body.modal-open,
 
 main {
   padding-left: 60px; }
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: 480px) {
     main {
       padding-left: 0px; } }
   main .content-left {
     margin-left: 10px; }
-    @media screen and (max-width: 767px) {
+    @media screen and (max-width: 480px) {
       main .content-left {
         width: 375px;
         margin-left: 30px; } }
@@ -2042,7 +2042,7 @@ main {
     margin-top: 80px;
     text-align: center;
     font-weight: 700; }
-    @media screen and (max-width: 767px) {
+    @media screen and (max-width: 480px) {
       main .steps {
         width: 400px;
         margin-left: 20px; } }
@@ -2077,7 +2077,7 @@ main {
         height: 27px;
         border-radius: 50%;
         display: none; }
-        @media screen and (max-width: 767px) {
+        @media screen and (max-width: 480px) {
           main .steps li a {
             width: 22px;
             height: 22px; } }
@@ -2091,12 +2091,15 @@ main {
           z-index: -1;
           top: 12px;
           right: 31px; }
-          @media screen and (max-width: 767px) {
+          @media screen and (max-width: 480px) {
             main .steps li a::after {
               top: 9px;
               right: 16px; } }
       main .steps li:first-child a::after {
         display: none; }
+  @media screen and (max-width: 480px) {
+    main .images-span {
+      width: auto; } }
   main .select-custom {
     width: 100%; }
     main .select-custom select {
@@ -2133,6 +2136,14 @@ main {
     top: 0px;
     right: 0px;
     background-repeat: no-repeat; }
+  main .date-icon {
+    display: table-cell;
+    top: 0px;
+    right: 0px; }
+  main .video-link {
+    display: table-cell;
+    top: 0px;
+    right: 0px; }
   main .tags {
     width: 100%;
     background: white;
@@ -2145,7 +2156,7 @@ main {
       width: 100%;
       display: inline-block;
       font-size: 22px; }
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: 480px) {
     main .help-right {
       width: 375px;
       clear: both;
@@ -2153,6 +2164,8 @@ main {
       margin-bottom: 50px; } }
   main .image-gallery {
     width: 100%; }
+  main .short-select {
+    width: 270px; }
 
 #container {
   position: relative;

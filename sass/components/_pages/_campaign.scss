@@ -1,11 +1,11 @@
 main {
     padding-left: 60px;
-    @media screen and (max-width: 767px) {
+    @media screen and (max-width: 480px) {
         padding-left: 0px;
     }
     .content-left {
         margin-left: 10px;
-        @media screen and (max-width: 767px) {
+        @media screen and (max-width: 480px) {
             width: 375px;
             margin-left: 30px;
         }
@@ -17,7 +17,7 @@ main {
         margin-top: 80px;
         text-align: center;
         font-weight: 700;
-        @media screen and (max-width: 767px) {
+        @media screen and (max-width: 480px) {
             width: 400px;
             margin-left: 20px;
         }
@@ -64,7 +64,7 @@ main {
           height: 27px;
           border-radius: 50%;
           display: none;
-          @media screen and (max-width: 767px) {
+          @media screen and (max-width: 480px) {
             width: 22px;
             height: 22px;
           } 
@@ -79,7 +79,7 @@ main {
                 z-index: -1;
                 top: 12px;
                 right: 31px;
-                @media screen and (max-width: 767px) {
+                @media screen and (max-width: 480px) {
                     top: 9px;
                     right: 16px;
                 } 
@@ -95,6 +95,12 @@ main {
 
       }
 
+    }
+    
+    .images-span {
+        @media screen and (max-width: 480px) {
+            width: auto;
+        } 
     }
     
     .select-custom {
@@ -137,6 +143,7 @@ main {
     .campaign-form{
         width: 100%;
     }
+    
     .plus {
         width: 29px;
         height: 28px;
@@ -150,6 +157,18 @@ main {
         top: 0px;
         right: 0px;
         background-repeat: no-repeat;
+    }
+    
+    .date-icon {
+        display: table-cell;
+        top: 0px;
+        right: 0px;
+    }
+    
+    .video-link {
+        display: table-cell;
+        top: 0px;
+        right: 0px;
     }
     
     .tags {
@@ -170,7 +189,7 @@ main {
     }
     
     .help-right {
-        @media screen and (max-width: 767px) {
+        @media screen and (max-width: 480px) {
             width: 375px;  
             clear: both;
             margin-left: 35px;
@@ -179,5 +198,9 @@ main {
     }
     .image-gallery {
         width: 100%
+    }
+    
+    .short-select {
+        width: 270px;
     }
 }
