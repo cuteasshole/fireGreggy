@@ -1,8 +1,14 @@
 main {
     padding-left: 60px;
-    
+    @media screen and (max-width: 767px) {
+        padding-left: 0px;
+    }
     .content-left {
         margin-left: 10px;
+        @media screen and (max-width: 767px) {
+            width: 375px;
+            margin-left: 30px;
+        }
     }
     
     .steps{
@@ -11,12 +17,20 @@ main {
         margin-top: 80px;
         text-align: center;
         font-weight: 700;
+        @media screen and (max-width: 767px) {
+            width: 400px;
+            margin-left: 20px;
+        }
       li{
         display: inline-block;
         color: white;
         padding: 0 26px;
         position: relative;
         z-index: 2;
+        @media screen and (max-width: 767px) {
+            padding: 0 11px;
+        } 
+          
         &.active{
           a{
               background: #F37926;
@@ -50,6 +64,10 @@ main {
           height: 27px;
           border-radius: 50%;
           display: none;
+          @media screen and (max-width: 767px) {
+            width: 22px;
+            height: 22px;
+          } 
               &:first-child {
                   display: inline-block;
               }
@@ -61,6 +79,10 @@ main {
                 z-index: -1;
                 top: 12px;
                 right: 31px;
+                @media screen and (max-width: 767px) {
+                    top: 9px;
+                    right: 16px;
+                } 
           }
         } 
         &:first-child{
@@ -72,6 +94,14 @@ main {
         }
 
       }
+
+    }
+    
+    .select-custom {
+        width: 100%;
+        select {
+            width: 100%;
+        }
     }
     .form-control {
         display: inline-block;
@@ -93,13 +123,19 @@ main {
         }
      
     }
+    .close{
+        opacity:1;    
+    }
+    
+
     
     select{
+        width: 100%;
         font-weight: 300;    
     }
     
     .campaign-form{
-        width: 600px;
+        width: 100%;
     }
     .plus {
         width: 29px;
@@ -117,7 +153,7 @@ main {
     }
     
     .tags {
-        width: 600px;
+        width: 100%;
         background: white;
         position: relative;
         input[type=text]{
@@ -131,5 +167,17 @@ main {
     margin-top: 10px;
     margin-bottom: 10px;
 
+    }
+    
+    .help-right {
+        @media screen and (max-width: 767px) {
+            width: 375px;  
+            clear: both;
+            margin-left: 35px;
+            margin-bottom: 50px;
+        } 
+    }
+    .image-gallery {
+        width: 100%
     }
 }

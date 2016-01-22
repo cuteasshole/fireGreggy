@@ -10,33 +10,54 @@
       <link rel="stylesheet" href="css/font-awesome/css/font-awesome.min.css">
   <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,700' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" href="css/components/app.css">
+  <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+  <script type="text/javascript" src="bower_components/jquery/dist/jquery.min.js"></script>
+  <script type="text/javascript" src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
   <body>
-          <div class="header-container">
-              <header>
-                  <div class="logo">
+      <div class="container-fluid header-full-width-opaque">
+          <nav class="navbar navbar-default">
+              <div class="container-fluid">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                  </button>
+                  <div class="logo logo-mobile"><a class="navbar-brand" href="#"><img src="img/firefunder_assets_firefunder_logo.png" title="Fire Funder Logo" alt="Fire Funder Logo" /></a></div>
+                </div>
 
-                  </div>
-                  <a href="#"><div class="logout">Logout</div></a>
-                  <a href="#"><div class="search"></div></a>
-                  
-                  <div class="user">
-                      <div class="welcome">
-                          Welcome, John Smith
-                          <span> <a href="#">My Campaigns</a></span>
-                      </div>
-                      <ul>
-                          <li><a href="#">who we are</a></li>
-                          <li><a href="#">what we do</a></li>
-                          <li><a href="#">help</a></li>
-                          <li><a href="#">contact us</a></li>
-                      </ul>
-                  </div>
-              </header>
-          </div>
-          <div class="nav-container">
-              <nav> <span><a href="#">My Campaigns</a></span> <img src="img/greater-than.svg"> <span><a href="#">About Project Creator</a></span> </nav>
-          </div>
-          <div class="main-container">
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="main-width header-container collapse navbar-collapse header-opaque" id="bs-example-navbar-collapse-1">
+                    <div class="col-md-4 logo logo-desktop"><a class="navbar-brand" href="#"><img src="img/logo.png" title="Fire Funder Logo" alt="Fire Funder Logo" /></a></div>
+                    <div class="col-md-6 user-details">
+                        <div class="user-welcome">
+                            <label>Welcome, John Smith</label>
+                            <a href="#"><span>My Campaigns</span></a>
+                        </div>
+                        <ul class="nav navbar-nav navbar-right">
+                            <li><a href="#">who we are</a></li>
+                            <li><a href="#">what we do</a></li>
+                            <li><a href="#">help</a></li>
+                            <li><a href="#">contact us</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-2">
+                        <ul class="nav navbar-nav navbar-right">
+                            <li><a href="#" class="search-icon">Search</a></li>
+                            <li><a href="#" class="logout-icon">Logout</a></li>
+                        </ul>
+                    </div>
+                </div><!-- /.navbar-collapse -->
+              </div><!-- /.container-fluid -->
+            </nav>
+      </div>
+      <div class="container-fluid nav-container">
+          <nav> <span><a href="#">My Campaigns</a></span> <img class="greater-than"src="img/greater-than.svg"> <span><a href="#">Backer Rewards</a></span> 
+          </nav>
+      </div>
+          <div class="container-fluid main-container">
               <main>
                   
                   <ul class="steps">
@@ -64,9 +85,9 @@
              
                   <br>
                       <br>
-                  <input class="cancel" type="button" value="CANCEL">
+                  <input class="cancel" type="button" value="CANCEL" onclick="location.href = 'campaign-5.html';">
                   
-                  <input class="next" type="button" value="NEXT">
+                  <input class="next" type="button" value="NEXT" onclick="location.href = 'campaign-7.html';">
                 </div>
                   <div class="help-right">
                     <h1>Help:</h1>
@@ -75,18 +96,20 @@
               </main>
           </div>
               
-          <div class="footer-container">
-              <footer>
+      <!-- FOOTER -->
+      <div class="footer-container container-fluid">
+          <footer class="row no-margin">
+              <div class="col-xs-10 footer-content no-padding">
                   <div class="footer-logotext">
-                      <div class="footer-logo">
-                      </div>
+                      <div class="footer-logo"></div>
                       <span class="copyright-text">&copy; Fire Funder 2015. All rights reserved</span>
                   </div>
                   <div class="social-media">
                       Get in touch with us <span class="twitter"></span> <span class="facebook"></span> <span class="google-plus"></span>
                   </div>
-              </footer>
-          </div>
+              </div>
+          </footer>
+      </div>
 
 
      
