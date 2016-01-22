@@ -39,7 +39,7 @@ main {
         font-weight: 700;
         @media screen and (max-width: 480px) {
             width: 400px;
-            margin-left: 0px;
+            margin-left: -10px;
         }
         @media screen and (min-width: 481px) and (max-width: 768px) {
             width: 550px;
@@ -225,12 +225,12 @@ main {
     .help-right {
         width: 360px;
         margin-left: 200px;
-
+        margin-bottom: 50px;
         @media screen  and (max-width: 768px) {
-            width: 95% !important; 
+            width: 93% !important; 
             clear: both;
             margin-bottom: 50px;
-            margin: 0 15px !important;
+            margin: 0 15px 50px 15px !important;
         } 
         @media screen and (min-width: 769px) and (max-width: 992px) {
             width: 550px; 
@@ -256,6 +256,12 @@ main {
     .reward-container{
         width: 100%;
         margin-left: 0;
+    }
+    
+    .reward-add {
+        @media screen and (max-width: 480px){
+            width: 175px;
+        }
     }
     
     .table-responsive {
