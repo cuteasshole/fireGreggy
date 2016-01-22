@@ -1,15 +1,35 @@
 main {
     padding-left: 60px;
-    @media screen and (max-width: 480px) {
-        padding-left: 0px;
+    @media screen and (max-width: 992px) {
+        width: 100%;
+        padding: 0px 10px;
     }
     .content-left {
-        margin-left: 10px;
-        @media screen and (max-width: 480px) {
-            width: 375px;
-            margin-left: 30px;
+        margin-left: 30px;
+        max-width: 600px;
+        &.images-container{
+            max-width: 810px;
+            margin-left: 15px;
+        }
+        @media screen and  (max-width: 992px) {
+            width: 100%;
+            margin-left: 0px;
+            
+        } 
+    }
+    
+    hr {
+        @media screen and  (max-width: 992px) {
+            display: none;
         }
     }
+    td {
+        a{
+            color: #F37926 !important;   
+        }
+            
+    }
+
     
     .steps{
         width: 660px;
@@ -19,17 +39,25 @@ main {
         font-weight: 700;
         @media screen and (max-width: 480px) {
             width: 400px;
-            margin-left: 20px;
+            margin-left: 0px;
         }
+        @media screen and (min-width: 481px) and (max-width: 768px) {
+            width: 550px;
+            margin-left: -5px;
+        }
+        
       li{
         display: inline-block;
         color: white;
         padding: 0 26px;
         position: relative;
         z-index: 2;
-        @media screen and (max-width: 767px) {
+        @media screen and (max-width: 480px) {
             padding: 0 11px;
         } 
+        @media screen and (min-width: 481px) and (max-width: 768px) {
+            padding: 0 18px;
+        }
           
         &.active{
           a{
@@ -83,6 +111,10 @@ main {
                     top: 9px;
                     right: 16px;
                 } 
+                @media screen and (min-width: 481px) and (max-width: 768px) {
+                    top: 12px;
+                    right: 22px;
+                } 
           }
         } 
         &:first-child{
@@ -133,7 +165,9 @@ main {
         opacity:1;    
     }
     
-
+    textarea {
+        width: 100%;
+    }
     
     select{
         width: 100%;
@@ -189,12 +223,27 @@ main {
     }
     
     .help-right {
-        @media screen and (max-width: 480px) {
-            width: 375px;  
+        width: 360px;
+        margin-left: 200px;
+
+        @media screen  and (max-width: 768px) {
+            width: 95% !important; 
             clear: both;
-            margin-left: 35px;
             margin-bottom: 50px;
+            margin: 0 15px !important;
         } 
+        @media screen and (min-width: 769px) and (max-width: 992px) {
+            width: 550px; 
+            clear: both;
+            margin-left: 10px;
+            margin-bottom: 50px;
+        }
+        
+        &.images-help {
+            width: 330px;
+            margin-left: 70px;
+        }
+        
     }
     .image-gallery {
         width: 100%
@@ -202,5 +251,23 @@ main {
     
     .short-select {
         width: 270px;
+    }
+    
+    .reward-container{
+        width: 100%;
+        margin-left: 0;
+    }
+    
+    .table-responsive {
+        border: 0;
+    }
+    
+    .upload-image {
+        float: right;
+        margin-right: 20px;
+    }
+    
+    .review-help{
+        margin-left: 40px;
     }
 }
