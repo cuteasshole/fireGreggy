@@ -2440,6 +2440,41 @@ main {
     margin-right: 20px; }
   main .review-help {
     margin-left: 40px; }
+  main table td {
+    text-align: center; }
+  main table th {
+    text-align: center; }
+  main .review-gallery {
+    width: 100%;
+    height: auto; }
+    main .review-gallery div {
+      width: 130px;
+      float: left;
+      margin: 5px; }
+      main .review-gallery div img {
+        width: 130px;
+        height: 90px; }
+  main .campaign-review input[type=text] {
+    background-color: #E0E0E0 !important; }
+  main .delete {
+    color: black !important; }
+  main .reward-header {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    vertical-align: middle; }
+  main hr {
+    width: 55%;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    vertical-align: middle; }
+  main .reward-button {
+    vertical-align: middle;
+    margin-left: 40px; }
+    @media screen and (max-width: 480px) {
+      main .reward-button {
+        margin-left: 0px; } }
+  main .reward-table {
+    height: 80px; }
 
 .start-campaign-container {
   width: 1320px;
