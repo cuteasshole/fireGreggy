@@ -276,4 +276,64 @@ main {
     .review-help{
         margin-left: 40px;
     }
+    
+    table{
+        td {
+            text-align: center;
+        }
+    
+        th {
+            text-align: center;
+        }
+    }
+    
+    .review-gallery {
+        width: 100%;
+        height: auto;
+        div{
+            width: 130px;
+            float: left;
+            margin: 5px;
+            img{
+                width: 130px;
+                height: 90px;
+            }
+        }
+    }
+    
+    .campaign-review{
+        input[type=text]{
+            background-color: #E0E0E0 !important;
+        }
+    }
+    
+    .delete {
+        color: black !important;
+    }
+    
+    .reward-header{
+        margin-top: 0px;
+        margin-bottom: 0px;
+        vertical-align: middle;   
+    }
+    
+    hr {
+        width: 55%;
+        margin-top: 0px;
+        margin-bottom: 0px;
+        vertical-align: middle;
+    }
+    .reward-button {
+        vertical-align: middle;
+        margin-left: 40px;
+        @media screen and (max-width: 480px){
+            margin-left: 0px;
+        }
+    }
+    
+    .reward-table {
+        height: 80px;
+
+    }
+
 }
