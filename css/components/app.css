@@ -2269,6 +2269,197 @@ body.modal-open,
       .signup-container .registration-form .terms-of-use a {
         color: #F47926; }
 
+main {
+  padding-left: 60px; }
+  @media screen and (max-width: 992px) {
+    main {
+      width: 100%;
+      padding: 0px 10px; } }
+  main .content-left {
+    margin-left: 30px;
+    max-width: 600px; }
+    main .content-left.images-container {
+      max-width: 810px;
+      margin-left: 15px; }
+    @media screen and (max-width: 992px) {
+      main .content-left {
+        width: 100%;
+        margin-left: 0px; } }
+  @media screen and (max-width: 992px) {
+    main hr {
+      display: none; } }
+  main td a {
+    color: #F37926 !important; }
+  main .steps {
+    width: 660px;
+    padding-left: 0px;
+    margin-top: 80px;
+    text-align: center;
+    font-weight: 700; }
+    @media screen and (max-width: 480px) {
+      main .steps {
+        width: 400px;
+        margin-left: -10px; } }
+    @media screen and (min-width: 481px) and (max-width: 768px) {
+      main .steps {
+        width: 550px;
+        margin-left: -5px; } }
+    main .steps li {
+      display: inline-block;
+      color: white;
+      padding: 0 26px;
+      position: relative;
+      z-index: 2; }
+      @media screen and (max-width: 480px) {
+        main .steps li {
+          padding: 0 11px; } }
+      @media screen and (min-width: 481px) and (max-width: 768px) {
+        main .steps li {
+          padding: 0 18px; } }
+      main .steps li.active a {
+        background: #F37926;
+        display: none; }
+        main .steps li.active a::after {
+          border-top: 3px solid #F37926; }
+        main .steps li.active a:first-child {
+          display: inline-block; }
+      main .steps li.checked a {
+        background: #F37926;
+        display: inline-block; }
+        main .steps li.checked a::after {
+          border-top: 3px solid #F37926; }
+        main .steps li.checked a:first-child {
+          display: none; }
+      main .steps li a {
+        color: white;
+        padding: 3px;
+        background: #AFAFAF;
+        width: 27px;
+        height: 27px;
+        border-radius: 50%;
+        display: none; }
+        @media screen and (max-width: 480px) {
+          main .steps li a {
+            width: 22px;
+            height: 22px; } }
+        main .steps li a:first-child {
+          display: inline-block; }
+        main .steps li a::after {
+          content: '';
+          border-top: 3px solid #AFAFAF;
+          position: absolute;
+          width: 100%;
+          z-index: -1;
+          top: 12px;
+          right: 31px; }
+          @media screen and (max-width: 480px) {
+            main .steps li a::after {
+              top: 9px;
+              right: 16px; } }
+          @media screen and (min-width: 481px) and (max-width: 768px) {
+            main .steps li a::after {
+              top: 12px;
+              right: 22px; } }
+      main .steps li:first-child a::after {
+        display: none; }
+  @media screen and (max-width: 480px) {
+    main .images-span {
+      width: auto; } }
+  main .select-custom {
+    width: 100%; }
+    main .select-custom select {
+      width: 100%; }
+  main .form-control {
+    display: inline-block; }
+  main input[type=text] {
+    padding-left: 10px;
+    height: 50px;
+    border: 0;
+    text-align: left;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 22px;
+    color: #AEAEB1; }
+    main input[type=text].shortfields {
+      width: 210px;
+      margin-right: 15px; }
+  main .close {
+    opacity: 1; }
+  main textarea {
+    width: 100%; }
+  main select {
+    width: 100%;
+    font-weight: 300; }
+  main .campaign-form {
+    width: 100%; }
+  main .plus {
+    width: 29px;
+    height: 28px;
+    background: url("../../img/plus.png");
+    display: table-cell;
+    position: absolute;
+    cursor: pointer;
+    margin: 10px;
+    top: 0px;
+    right: 0px;
+    background-repeat: no-repeat; }
+  main .date-icon {
+    display: table-cell;
+    top: 0px;
+    right: 0px; }
+  main .video-link {
+    display: table-cell;
+    top: 0px;
+    right: 0px; }
+  main .tags {
+    width: 100%;
+    background: white;
+    position: relative;
+    margin-top: 10px;
+    margin-bottom: 10px; }
+    main .tags input[type=text] {
+      margin-top: 0px;
+      margin-bottom: 0px;
+      width: 100%;
+      display: inline-block;
+      font-size: 22px; }
+  main .help-right {
+    width: 360px;
+    margin-left: 200px;
+    margin-bottom: 50px; }
+    @media screen and (max-width: 768px) {
+      main .help-right {
+        width: 93% !important;
+        clear: both;
+        margin-bottom: 50px;
+        margin: 0 15px 50px 15px !important; } }
+    @media screen and (min-width: 769px) and (max-width: 992px) {
+      main .help-right {
+        width: 550px;
+        clear: both;
+        margin-left: 10px;
+        margin-bottom: 50px; } }
+    main .help-right.images-help {
+      width: 330px;
+      margin-left: 70px; }
+  main .image-gallery {
+    width: 100%; }
+  main .short-select {
+    width: 270px; }
+  main .reward-container {
+    width: 100%;
+    margin-left: 0; }
+  @media screen and (max-width: 480px) {
+    main .reward-add {
+      width: 175px; } }
+  main .table-responsive {
+    border: 0; }
+  main .upload-image {
+    float: right;
+    margin-right: 20px; }
+  main .review-help {
+    margin-left: 40px; }
+
 .start-campaign-container {
   width: 1320px;
   margin: 0 auto;
