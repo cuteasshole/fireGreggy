@@ -30,7 +30,9 @@
         }
 
         input[type=checkbox] {
-            background-color: #F37926;
+            margin-left: 0;
+            background: #F37926;
+            position: static;
         }
         input[type=submit] {
             background-color: #F37926;

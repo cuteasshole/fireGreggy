@@ -69,21 +69,37 @@
             padding: 0;
             @media screen and (max-width: 992px) {
                 width: 24%;
-                margin: 10px 3px;
+                margin: 10px 7px;
             }
             @media screen and (max-width: 767px) {
-                width: 47%;
+                width: 48%;
+            }
+            @media screen and (max-width: 701px) {
+                margin: 10px 0.9%;
+            }
+            @media screen and (max-width: 540px) {
+                margin: 10px 0.8%;
             }
             @media screen and (max-width: 470px) {
-                width: 97%;
+                width: 98%;
+                margin: 10px 1%;
             }
             &:first-child {
                 margin-left: 0;
                 @media screen and (max-width: 992px) {
-                    margin-left: 3px;
+                    margin-left: 8px;
                 }
                 @media screen and (max-width: 767px) {
                     margin-left: 7px;
+                }
+                @media screen and (max-width: 540px) {
+                    margin-left: 0.9%;
+                }
+                @media screen and (max-width: 701px) {
+                    margin-left: 0.8%;
+                }
+                @media screen and (max-width: 470px) {
+                    margin-left: 1%;
                 }
             }
             &:last-child {
